@@ -1,0 +1,17 @@
+@import url(./reset.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --duck-egg-blue: #d0f0ec;
+  --dodger-blue: #39f;
+  --dark-cream: #ffeb99;
+  --marigold: #fc0;
+  --aquamarine: #01ccb8;
+  --bright-lavender: #c6f;
+  --very-light-blue: #d6ebff;
+  --melon: #ff855c;
+  --light-lavendar: #ebc2ff;
+  --ff-6633: #f63;
+  --151515: #151515;
+  --white: #fff;
+}/*# sourceMappingURL=style.css.map */
