@@ -1,6 +1,7 @@
 @import url(./reset.css);
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+@import url(./compo.css);
 :root {
   --duck-egg-blue: #d0f0ec;
   --dodger-blue: #39f;
@@ -14,4 +15,456 @@
   --ff-6633: #f63;
   --151515: #151515;
   --white: #fff;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Montserrat", "Pretendard", -apple-system, "Segoe UI", sans-serif;
+}
+
+.imgWrap {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+.imgWrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--151515);
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+
+.section-contents {
+  margin-left: 316px;
+  padding: 73px 24px 46px;
+}
+
+.pageTit {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #afafaf;
+  position: relative;
+}
+.pageTit button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: transparent;
+  border: solid 1px var(--ff-6633);
+  min-width: 134px;
+  height: 36px;
+  color: var(--ff-6633);
+  font-size: 16px;
+  font-weight: 500;
+}
+.pageTit button i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/ic_download.svg) center no-repeat;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.tab li {
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+.tab li.ac {
+  border-bottom-color: var(--ff-6633);
+}
+.tab li.ac a {
+  color: var(--ff-6633);
+}
+.tab li a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.05;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.tab li a:hover {
+  color: var(--ff-6633);
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 28px;
+  margin-bottom: 48px;
+}
+.summary .item {
+  flex: 1 0 0;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgba(21, 34, 50, 0.08);
+  background-color: var(--white);
+  text-align: center;
+}
+.summary .name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--151515);
+}
+.summary .count {
+  line-height: 34px;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.14px;
+  color: var(--151515);
+  margin: 12px;
+}
+.summary .desc {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #afafaf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.summary .desc .percent {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08px;
+}
+.summary .desc .percent.up {
+  color: #ff5d5d;
+}
+.summary .desc .percent.up::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/ic_up.svg) center no-repeat;
+}
+.summary .desc .percent.down {
+  color: #457feb;
+}
+.summary .desc .percent.down::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/ic_down.svg) center no-repeat;
+}
+
+.sectionTit {
+  position: relative;
+  margin-bottom: 28px;
+}
+.sectionTit h2 {
+  display: inline;
+  font-family: "Pretendard";
+}
+.sectionTit span {
+  margin-left: 12px;
+  font-size: 24px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--ff-6633);
+}
+.sectionTit .filter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 0;
+  padding: 8px;
+  padding-right: 28px;
+  background: #fff url(../img/ic_selectArr.svg) right 8px center no-repeat;
+  min-width: 180px;
+  box-sizing: border-box;
+}
+
+.productThumb {
+  background-color: #fff;
+  border: 1px solid var(--151515);
+  border-bottom: 0;
+  border-left: 0;
+  margin-bottom: 34px;
+}
+.productThumb::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.productThumb .item {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 16.6666666667%;
+  border: 1px solid var(--151515);
+  border-right: 0;
+  border-top: 0;
+}
+.productThumb .item:nth-child(1), .productThumb .item:nth-child(7n) {
+  margin-left: 0;
+}
+.productThumb .text {
+  border-top: 1px solid var(--151515);
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.productThumb .text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.lineGraph {
+  padding: 30px;
+  padding-bottom: 35px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(21, 34, 50, 0.08);
+  box-sizing: border-box;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.lineGraph .top {
+  position: relative;
+  margin-bottom: 40px;
+}
+.lineGraph .name {
+  display: inline;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.lineGraph .count {
+  display: inline;
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--ff-6633);
+}
+.lineGraph .legend {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: var(--151515);
+}
+.lineGraph .legend .click {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.lineGraph .legend .click::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff6633;
+  opacity: 0.4;
+}
+.lineGraph .legend .like {
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.lineGraph .legend .like::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff6633;
+  opacity: 0.7;
+}
+.lineGraph .canvas {
+  width: 100%;
+  height: 366px;
+}
+.col-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.col-2 > div {
+  flex: 1 0 0;
+}
+
+.dashGraph {
+  padding: 30px;
+  padding-bottom: 23px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(21, 34, 50, 0.08);
+  box-sizing: border-box;
+}
+.dashGraph .name {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.dashGraph table {
+  width: 100%;
+  table-layout: fixed;
+}
+.dashGraph table tbody {
+  border-bottom: 1px solid #707070;
+}
+.dashGraph table th {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #707070;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #797979;
+}
+.dashGraph table td {
+  padding: 8px 0;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--151515);
+}
+.dashGraph table th:nth-child(1), .dashGraph table td:nth-child(1) {
+  text-align: left;
+}
+.dashGraph table th:last-child, .dashGraph table td:last-child {
+  text-align: right;
+}
+.dashGraph table .bar {
+  display: block;
+  height: 21px;
+  min-width: 0.1%;
+  background-color: var(--ff-6633);
+}
+.dashGraph.donutType {
+  position: relative;
+}
+.dashGraph.donutType .tableWrap {
+  padding-right: 324px;
+}
+.dashGraph.donutType table td {
+  font-weight: 500;
+}
+.dashGraph.donutType .donut {
+  position: absolute;
+  right: 37px;
+  top: 40px;
+  width: 264px;
+  height: 264px;
+  z-index: 0;
+}
+.dashGraph.donutType .center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.dashGraph.donutType .center .label {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #797979;
+  margin-top: 11px;
+  margin-bottom: 8px;
+}
+.dashGraph.donutType .center .count {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--151515);
 }/*# sourceMappingURL=style.css.map */
