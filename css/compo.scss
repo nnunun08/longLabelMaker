@@ -53,6 +53,9 @@
                 background-color: var(--ff-6633);
             }
         }
+        li.ac .item {
+            background-color: var(--ff-6633);
+        }
         .ic {
             width: 36px;
             height: 36px;
@@ -87,6 +90,24 @@
         width: 24px;
         height: 24px;
         background: url(../img/ic_nextArr.svg) center no-repeat;
+        transform: rotate(180deg);
+    }
+    .prevDouble {
+        border: 0;
+        background: 0;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        background: url(../img/ic_prevDouble.svg) center no-repeat;
+    }
+    .nextDouble {
+        border: 0;
+        background: 0;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        background: url(../img/ic_nextDouble.svg) center no-repeat;
+        transform: rotate(180deg);
     }
     ul {
         display: flex;

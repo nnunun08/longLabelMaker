@@ -53,6 +53,9 @@
 .compo_lnb .list .item:hover {
   background-color: var(--ff-6633);
 }
+.compo_lnb .list li.ac .item {
+  background-color: var(--ff-6633);
+}
 .compo_lnb .list .ic {
   width: 36px;
   height: 36px;
@@ -96,6 +99,24 @@
   width: 24px;
   height: 24px;
   background: url(../img/ic_nextArr.svg) center no-repeat;
+  transform: rotate(180deg);
+}
+.compo_paging .prevDouble {
+  border: 0;
+  background: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background: url(../img/ic_prevDouble.svg) center no-repeat;
+}
+.compo_paging .nextDouble {
+  border: 0;
+  background: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background: url(../img/ic_nextDouble.svg) center no-repeat;
+  transform: rotate(180deg);
 }
 .compo_paging ul {
   display: flex;

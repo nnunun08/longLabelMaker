@@ -87,34 +87,38 @@ h2 {
     // margin-left: 316px;
     padding: 73px 24px 46px;
 }
-
+@mixin downloadBtn() {
+    .download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        background-color: transparent;
+        border: solid 1px var(--ff-6633);
+        min-width: 134px;
+        height: 36px;
+        color: var(--ff-6633);
+        font-size: 16px;
+        font-weight: 500;
+        i {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(../img/ic_download.svg) center no-repeat;
+        }
+        @content;
+    }
+}
 @mixin pageTit() {
     .pageTit {
         padding-bottom: 24px;
         border-bottom: 1px solid #afafaf;
         position: relative;
-        button {
+        @include downloadBtn() {
             position: absolute;
-            right: 0;
             top: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 4px;
-            background-color: transparent;
-            border: solid 1px var(--ff-6633);
-            min-width: 134px;
-            height: 36px;
-            color: var(--ff-6633);
-            font-size: 16px;
-            font-weight: 500;
-            i {
-                display: inline-block;
-                width: 16px;
-                height: 16px;
-                background: url(../img/ic_download.svg) center no-repeat;
-            }
-        }
+            right: 0;
+        };
         @content;
     }
 }
@@ -245,10 +249,15 @@ h2 {
         text-align: left;
         color: var(--ff-6633);
     }
-    .filter {
+    .btnWrap {
         position: absolute;
         right: 0;
         top: 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .filter {
         border: 0;
         padding: 8px;
         padding-right: 28px;
@@ -256,6 +265,21 @@ h2 {
         min-width: 180px;
         box-sizing: border-box;
     }
+    .btn-fill {
+        border: 0;
+        height: 36px;
+        min-width: 134px;
+        background-color: var(--ff-6633);
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #f4f4f4;
+    }
+    @include downloadBtn();
 }
 
 .productThumb {
@@ -507,6 +531,175 @@ h2 {
                 text-align: center;
                 color: var(--151515);
             }
+        }
+    }
+}
+
+.brandThumbList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+    margin-top: 52px;
+    margin-bottom: 200px;
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--151515);      
+        .thumb {
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+            border-radius: 50%;
+            border: solid 1px #707070;
+            background-color: #fff;
+            overflow: hidden;
+            .imgWrap {
+                position: absolute;
+                top: 0;
+                left: 0;
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+        flex: 0 0 auto;
+        width: calc((100% - 120px) / 7);
+    }
+}
+
+.itemThumbList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 96px 24px;
+    margin-bottom: 120px;
+    li {
+        width: calc((100% - 24px) / 2);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px 24px;
+    }
+    .thumb {
+        width: calc((100% - 24px) / 2);
+        position: relative;
+        border: solid 1px #707070;
+        box-sizing: border-box;
+        .badge {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    .qr {
+        width: calc((100% - 24px) / 2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px #707070;
+        box-sizing: border-box;
+        img {
+            max-width: 63%;
+        }
+    }
+    .name {
+        @include lineClamp(1);
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--151515);
+        margin-bottom: 12px;
+    }
+    .name2 {
+        @include lineClamp(1);
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--151515);
+        margin-bottom: 12px;
+    }
+    .code {
+        @include lineClamp(1);
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #afafaf;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #afafaf;
+    }
+    .dateWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .date {
+        display: flex;
+        .label {
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--151515);
+            width: 80px;
+        }
+        .value {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--151515);
+        }
+    }
+
+    .left {
+        flex: 1 0 auto;
+    }
+    .right {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        button {
+            background-color: transparent;
+            width: 134px;
+            height: 32px;
+            border: solid 1px #afafaf;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #afafaf;
         }
     }
 }

@@ -81,10 +81,7 @@ h2 {
   border-bottom: 1px solid #afafaf;
   position: relative;
 }
-.pageTit button {
-  position: absolute;
-  right: 0;
-  top: 0;
+.pageTit .download {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,8 +93,11 @@ h2 {
   color: var(--ff-6633);
   font-size: 16px;
   font-weight: 500;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.pageTit button i {
+.pageTit .download i {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -226,16 +226,54 @@ h2 {
   text-align: left;
   color: var(--ff-6633);
 }
-.sectionTit .filter {
+.sectionTit .btnWrap {
   position: absolute;
   right: 0;
   top: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.sectionTit .filter {
   border: 0;
   padding: 8px;
   padding-right: 28px;
   background: #fff url(../img/ic_selectArr.svg) right 8px center no-repeat;
   min-width: 180px;
   box-sizing: border-box;
+}
+.sectionTit .btn-fill {
+  border: 0;
+  height: 36px;
+  min-width: 134px;
+  background-color: var(--ff-6633);
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f4f4f4;
+}
+.sectionTit .download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: transparent;
+  border: solid 1px var(--ff-6633);
+  min-width: 134px;
+  height: 36px;
+  color: var(--ff-6633);
+  font-size: 16px;
+  font-weight: 500;
+}
+.sectionTit .download i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/ic_download.svg) center no-repeat;
 }
 
 .productThumb {
@@ -481,4 +519,185 @@ h2 {
   letter-spacing: normal;
   text-align: center;
   color: var(--151515);
+}
+
+.brandThumbList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  margin-top: 52px;
+  margin-bottom: 200px;
+}
+.brandThumbList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--151515);
+  flex: 0 0 auto;
+  width: calc((100% - 120px) / 7);
+}
+.brandThumbList li .thumb {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  border-radius: 50%;
+  border: solid 1px #707070;
+  background-color: #fff;
+  overflow: hidden;
+}
+.brandThumbList li .thumb .imgWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.brandThumbList li .thumb .imgWrap img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.itemThumbList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 96px 24px;
+  margin-bottom: 120px;
+}
+.itemThumbList li {
+  width: calc((100% - 24px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 24px;
+}
+.itemThumbList .thumb {
+  width: calc((100% - 24px) / 2);
+  position: relative;
+  border: solid 1px #707070;
+  box-sizing: border-box;
+}
+.itemThumbList .thumb .badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.itemThumbList .qr {
+  width: calc((100% - 24px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #707070;
+  box-sizing: border-box;
+}
+.itemThumbList .qr img {
+  max-width: 63%;
+}
+.itemThumbList .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+  margin-bottom: 12px;
+}
+.itemThumbList .name2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+  margin-bottom: 12px;
+}
+.itemThumbList .code {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #afafaf;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #afafaf;
+}
+.itemThumbList .dateWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.itemThumbList .date {
+  display: flex;
+}
+.itemThumbList .date .label {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+  width: 80px;
+}
+.itemThumbList .date .value {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.itemThumbList .left {
+  flex: 1 0 auto;
+}
+.itemThumbList .right {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.itemThumbList .right button {
+  background-color: transparent;
+  width: 134px;
+  height: 32px;
+  border: solid 1px #afafaf;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #afafaf;
 }/*# sourceMappingURL=style.css.map */
