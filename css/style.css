@@ -93,15 +93,47 @@ h2 {
   color: var(--ff-6633);
   font-size: 16px;
   font-weight: 500;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 .pageTit .download i {
   display: inline-block;
   width: 16px;
   height: 16px;
   background: url(../img/ic_download.svg) center no-repeat;
+}
+.pageTit .btnWrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 20px;
+  padding-top: 6.5px;
+}
+.pageTit .preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: transparent;
+  border: solid 1px var(--ff-6633);
+  min-width: 134px;
+  height: 36px;
+  color: var(--ff-6633);
+  font-size: 16px;
+  font-weight: 500;
+}
+.pageTit .btn-fill {
+  border: 0;
+  height: 36px;
+  min-width: 134px;
+  background-color: var(--ff-6633);
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f4f4f4;
 }
 
 .tab {
@@ -700,4 +732,179 @@ h2 {
   letter-spacing: normal;
   text-align: center;
   color: #afafaf;
+}
+
+.dualSection {
+  position: relative;
+}
+
+.guideWord {
+  font-size: 32px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.guideWord b {
+  font-weight: 500;
+}
+
+.rightSection {
+  position: absolute;
+  padding-left: 316px;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 62px;
+}
+.rightSection .tray {
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.05;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.rightSection .tray .btnWrap {
+  display: flex;
+  gap: 24px;
+}
+.rightSection .tray .btnWrap .btn-fill {
+  border: 0;
+  height: 36px;
+  min-width: 134px;
+  background-color: var(--ff-6633);
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f4f4f4;
+  height: 40px;
+  width: 380px;
+  font-size: 18px;
+}
+.rightSection .tray .btnWrap .btn-line {
+  border: 1px solid var(--ff-6633);
+  height: 36px;
+  min-width: 134px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--ff-6633);
+  height: 40px;
+  width: 380px;
+  font-size: 18px;
+}
+.rightSection .tray .req {
+  display: inline;
+  color: var(--ff-6633);
+}
+.rightSection .tray input {
+  padding: 15px 14px 14px;
+  border: solid 1px #afafaf;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.rightSection .tray input:focus {
+  outline-color: var(--151515);
+}
+.rightSection .tray input::-moz-placeholder {
+  color: #afafaf;
+}
+.rightSection .tray input::placeholder {
+  color: #afafaf;
+}
+.rightSection .tray p {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.rightSection .tray .file {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.rightSection .tray .file .dropHere {
+  flex: 0 0 auto;
+  width: 272px;
+  height: 272px;
+  border: dashed 1px #afafaf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--151515);
+}
+.rightSection .tray .file .attachedFile {
+  flex: 0 0 auto;
+  width: 272px;
+  height: 272px;
+  position: relative;
+}
+.rightSection .tray .file .attachedFile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.rightSection .tray .file .attachedFile .remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
