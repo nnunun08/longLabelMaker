@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+
+    <div class="root">
+        <div data-include-path="./compo_lnb.html"></div>
+        
+        <div class="section-contents">
+            <div class="pageTit" style="margin-bottom: 40px;">
+                <h1>브랜드 추가</h1>
+                <div class="btnWrap">
+                    <button class="preview">
+                        미리보기
+                    </button>
+                    <button class="btn-fill">저장하기</button>
+                </div>
+            </div>
+
+            <div class="dualSection">
+                <div class="guideWord">
+                    <b>브랜드가 추구하는<br>
+                        환경 목표가 있을까요?</b><br>
+                        자세히 넣어줄수록<br>
+                        소비자들의 이해를<br>
+                        도울 수 있어요
+                </div>
+                <div class="rightSection">
+                    <div class="tray">
+                        <div class="tit">
+                            <span style="margin-right: 4px;">탄소절감</span>
+                            <label class="radio">
+                                <input type="radio" name="radio" checked>
+                                목표 설정
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio">
+                                목표 미설정
+                            </label>
+                        </div>
+                        <textarea placeholder="입력해주세요"></textarea>
+                    </div>
+
+                    <div class="tray">
+                        <div class="tit">
+                            <span style="margin-right: 4px;">소재의 개선 (ex. 친환경 소재, 새로운 소재 활용)</span>
+                            <label class="radio">
+                                <input type="radio" name="radio2" checked>
+                                목표 설정
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio2">
+                                목표 미설정
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <div class="tit">
+                            <span style="margin-right: 4px;">제조방식(ex. 제조 방식 전반의 개선을 위한 노력)</span>
+                            <label class="radio">
+                                <input type="radio" name="radio3" checked>
+                                목표 설정
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio3">
+                                목표 미설정
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <div class="tit">
+                            <span style="margin-right: 4px;">운송(ex. 친환경 방식으로의 운송 방법)</span>
+                            <label class="radio">
+                                <input type="radio" name="radio4" checked>
+                                목표 설정
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio4">
+                                목표 미설정
+                            </label>
+                        </div>
+                        <textarea placeholder="입력해주세요"></textarea>
+                    </div>
+
+                    <div class="tray">
+                        <div class="tit">
+                            <span style="margin-right: 4px;">폐기를 막는 방법(ex. 수선, 재사용, 재활용 프로그램 등)</span>
+                            <label class="radio">
+                                <input type="radio" name="radio5" checked>
+                                목표 설정
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio5">
+                                목표 미설정
+                            </label>
+                        </div>
+                        <textarea placeholder="입력해주세요"></textarea>
+                    </div>
+
+                    <button class="btn-line btn-add">
+                        <img src="./img/ic_plus.svg" alt="">
+                        추가하기
+                    </button>
+
+                    <div class="tray">
+                        <span>환경목표</span>
+                        <input type="text" placeholder="입력해주세요" style="margin-bottom: 18px;">
+
+                        <div class="tit">
+                            <span>내용</span>
+                        </div>
+                        <textarea placeholder="입력해주세요"></textarea>
+
+                        <div class="flexEnd">
+                            <button class="btn-fill finish">작성완료</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+</body>
+</html>

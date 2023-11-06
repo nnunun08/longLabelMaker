@@ -23,6 +23,10 @@ body {
   overflow: hidden;
 }
 
+button {
+  cursor: pointer;
+}
+
 .root {
   position: relative;
   width: 100vw;
@@ -763,6 +767,27 @@ h2 {
   gap: 20px;
   padding-bottom: 62px;
 }
+.rightSection .btn-line {
+  border: 1px solid var(--ff-6633);
+  height: 36px;
+  min-width: 134px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--ff-6633);
+}
+.rightSection .btn-add {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
 .rightSection .tray {
   padding: 20px;
   background-color: #fff;
@@ -778,6 +803,45 @@ h2 {
   letter-spacing: normal;
   text-align: left;
   color: var(--151515);
+}
+.rightSection .tray .flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+.rightSection .tray .btn-fill {
+  border: 0;
+  height: 36px;
+  min-width: 134px;
+  background-color: var(--ff-6633);
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f4f4f4;
+}
+.rightSection .tray .btn-fill.finish {
+  width: 140px;
+  height: 42px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f4f4f4;
+}
+.rightSection .tray .tit {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.rightSection .tray textarea {
+  margin-top: 12px;
 }
 .rightSection .tray .btnWrap {
   display: flex;
@@ -821,7 +885,7 @@ h2 {
   display: inline;
   color: var(--ff-6633);
 }
-.rightSection .tray input {
+.rightSection .tray input[type=text] {
   padding: 15px 14px 14px;
   border: solid 1px #afafaf;
   font-size: 16px;
@@ -833,13 +897,13 @@ h2 {
   text-align: left;
   color: var(--151515);
 }
-.rightSection .tray input:focus {
+.rightSection .tray input[type=text]:focus {
   outline-color: var(--151515);
 }
-.rightSection .tray input::-moz-placeholder {
+.rightSection .tray input[type=text]::-moz-placeholder {
   color: #afafaf;
 }
-.rightSection .tray input::placeholder {
+.rightSection .tray input[type=text]::placeholder {
   color: #afafaf;
 }
 .rightSection .tray p {
@@ -866,6 +930,7 @@ h2 {
   color: var(--151515);
 }
 .rightSection .tray .file .dropHere {
+  cursor: grab;
   flex: 0 0 auto;
   width: 272px;
   height: 272px;
@@ -896,6 +961,7 @@ h2 {
      object-fit: fill;
 }
 .rightSection .tray .file .attachedFile .remove {
+  cursor: pointer;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -907,4 +973,122 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+label.radio {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+  cursor: pointer;
+}
+label.radio::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/ic_radio.svg) center no-repeat;
+}
+label.radio:has(:checked)::before {
+  background: url(../img/ic_radioCheck.svg) center no-repeat;
+}
+label.radio input[type=radio] {
+  display: none;
+}
+
+textarea {
+  box-sizing: border-box;
+  min-height: 140px;
+  padding: 15px 14px;
+  border: solid 1px #afafaf;
+  resize: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+textarea:focus {
+  outline-color: var(--151515);
+}
+textarea::-moz-placeholder {
+  color: #afafaf;
+}
+textarea::placeholder {
+  color: #afafaf;
+}
+
+.longlabel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.labelItem {
+  height: 144px;
+  flex: 1 0 48%;
+  max-width: calc((100% - 24px) / 2);
+  background-color: #fff;
+  padding: 27px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+}
+.labelItem .btn-line {
+  border: 1px solid var(--ff-6633);
+  height: 36px;
+  min-width: 134px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--ff-6633);
+}
+.labelItem .btn-line.grey {
+  color: #afafaf;
+  border-color: #afafaf;
+  min-width: 120px;
+}
+.labelItem .name {
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.labelItem .status {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--ff-6633);
+}
+.labelItem button {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=style.css.map */
