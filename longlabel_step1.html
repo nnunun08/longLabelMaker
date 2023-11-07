@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+
+    <div class="root">
+        <div data-include-path="./compo_lnb.html"></div>
+        
+        <div class="section-contents">
+            <div class="pageTit" style="margin-bottom: 40px;">
+                <h1>Long Label 추가</h1>
+                <div class="btnWrap">
+                    <button class="preview">
+                        미리보기
+                    </button>
+                    <button class="btn-fill" onclick="confirm()">저장하기</button>
+                </div>
+            </div>
+
+            <div class="stepProcess">
+                <div class="line"></div>
+                <div class="item ac">
+                    <div class="circle"></div>
+                    <div class="step">STEP 01</div>
+                    <div class="name">기본정보</div>
+                    <div class="state">32% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 02</div>
+                    <div class="name">소재</div>
+                    <div class="state">32% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 03</div>
+                    <div class="name">제조</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 04</div>
+                    <div class="name">여정</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 05</div>
+                    <div class="name">패키지</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 06</div>
+                    <div class="name">폐기</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 07</div>
+                    <div class="name">인증마크</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 08</div>
+                    <div class="name">키워드</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 09</div>
+                    <div class="name">안내 및 홍보</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 10</div>
+                    <div class="name">케어가이드</div>
+                    <div class="state">작성전</div>
+                </div>
+            </div>
+
+            <div class="dualSection">
+                <div class="guideWord">
+                    <b>LABEL 생성을 위한<br>
+                        첫 단계입니다.</b><br>
+                        제품의 기본 정보를<br>
+                        입력해주세요.
+                </div>
+                <div class="rightSection">
+                    <div class="tray">
+                        <span>소속 브랜드<span class="req">*</span></span>
+                        <select>
+                            <option value="선택해 주세요">선택해 주세요</option>
+                            <option value="선택해 주세요">선택해 주세요</option>
+                            <option value="선택해 주세요">선택해 주세요</option>
+                            <option value="선택해 주세요">선택해 주세요</option>
+                        </select>
+                    </div>
+
+                    <div class="tray">
+                        <span>제품명<span class="req">*</span></span>
+                        <input type="text" placeholder="입력해주세요">
+                    </div>
+
+                    <div class="tray">
+                        <span>제품코드</span>
+                        <input type="text" placeholder="입력해주세요">
+                    </div>
+
+                    <div class="tray">
+                        <span>제품이미지<span class="req">*</span></span>
+                        <p>제품을 가장 잘 나타내는 사진 1장을 넣어주세요</p>
+                        <input type="text" placeholder="입력해주세요">
+                        <div class="file">
+                            <div class="dropHere">
+                                <img src="./img/ic_dragdrop.svg" alt="">
+                                Drag your photo here
+                            </div>
+                            <div class="attachedFile">
+                                <img src="./img/resource/item_thumb.png" alt="">
+                                <button class="remove">
+                                    <img src="./img/ic_removeAttach.svg" alt="">
+                                </button>
+                            </div>
+                            권장 해상도 : 600 x 600 / 최소 해상도 : 100x100 / JPG 권장
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <span>제품 카테고리</span>
+                        <select>
+                            <option value="선택해 주세요">선택해 주세요</option>
+                        </select>
+                    </div>
+
+                    <div class="tray">
+                        <span>색상</span>
+                        <input type="text" placeholder="입력해주세요">
+                    </div>
+                    
+                    <div class="tray">
+                        <span>제품 사이즈</span>
+                        <input type="text" placeholder="입력해주세요">
+
+                        <button class="btn-line btn-add" style="margin-top: 12px;">
+                            <img src="./img/ic_plus.svg" alt="">
+                            추가하기
+                        </button>
+                        <div class="list">
+                            <div class="list-name">제품 사이즈 목록</div>
+                            <div class="listWrap">
+                                <div class="list-item"><button class="remove"></button>S 세부 사이즈 내용을 적을까요?</div>
+                                <div class="list-item"><button class="remove"></button>S 세부 사이즈 내용을 적을까요?</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <span>제조연월</span>
+                        <div class="selectWrap">
+                            <select>
+                                <option value="연도">연도</option>
+                                <option value="연도">연도</option>
+                                <option value="연도">연도</option>
+                                <option value="연도">연도</option>
+                            </select>
+                            <select>
+                                <option value="월">월</option>
+                                <option value="월">월</option>
+                                <option value="월">월</option>
+                                <option value="월">월</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- display none / block 으로 컨트롤 -->
+        <div id="modal" class="dim" style="display: block;">
+            <div class="modal">
+                <button class="modalClose" onclick="modalClose()"></button>
+                <p class="tit">작성중인 내용을 저장할까요?</p>
+                <p>
+                    제품의 정보를 작성중이에요. 저장하지 않고 이동할 경우 작성 중인 내용이 삭제됩니다.
+                </p>
+                <div class="btnWrap">
+                    <button class="btn-line grey">이동하기</button>
+                    <button class="btn-fill">저장하기</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // 모달
+            const modal = document.getElementById('modal');
+
+            // 모달호출
+            function confirm() {
+                modal.style.setProperty("display", "block")
+            }
+
+            // 모달닫기
+            function modalClose() {
+                modal.style.setProperty("display", "none");
+            }
+        </script>
+    </div>
+
+    
+
+</body>
+</html>

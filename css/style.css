@@ -25,6 +25,7 @@ body {
 
 button {
   cursor: pointer;
+  border: 0;
 }
 
 .root {
@@ -55,6 +56,7 @@ h1 {
   font-size: 48px;
   font-weight: 800;
   color: var(--151515);
+  font-family: Pretendard;
 }
 
 h2 {
@@ -804,6 +806,42 @@ h2 {
   text-align: left;
   color: var(--151515);
 }
+.rightSection .tray .list {
+  margin-top: 28px;
+}
+.rightSection .tray .list .list-name {
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+  padding-bottom: 12px;
+}
+.rightSection .tray .list .listWrap {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid #afafaf;
+  border-bottom: 1px solid #afafaf;
+}
+.rightSection .tray .list .listWrap .list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.rightSection .tray .list .listWrap .list-item .remove {
+  border: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../img/ic_listRemove.svg) center no-repeat;
+}
+.rightSection .tray .list .listWrap .list-item + .list-item {
+  margin-top: 12px;
+}
 .rightSection .tray .flexEnd {
   display: flex;
   justify-content: flex-end;
@@ -885,6 +923,7 @@ h2 {
   display: inline;
   color: var(--ff-6633);
 }
+.rightSection .tray select,
 .rightSection .tray input[type=text] {
   padding: 15px 14px 14px;
   border: solid 1px #afafaf;
@@ -897,14 +936,26 @@ h2 {
   text-align: left;
   color: var(--151515);
 }
+.rightSection .tray select:focus,
 .rightSection .tray input[type=text]:focus {
   outline-color: var(--151515);
 }
-.rightSection .tray input[type=text]::-moz-placeholder {
+.rightSection .tray select::-moz-placeholder, .rightSection .tray input[type=text]::-moz-placeholder {
   color: #afafaf;
 }
+.rightSection .tray select::placeholder,
 .rightSection .tray input[type=text]::placeholder {
   color: #afafaf;
+}
+.rightSection .tray select {
+  background: url(../img/ic_selectArrGrey.svg) center right 14px no-repeat;
+}
+.rightSection .tray .selectWrap {
+  display: flex;
+  gap: 24px;
+}
+.rightSection .tray .selectWrap select {
+  width: 272px;
 }
 .rightSection .tray p {
   font-size: 16px;
@@ -917,6 +968,7 @@ h2 {
   color: var(--151515);
 }
 .rightSection .tray .file {
+  font-family: "Pretendard";
   display: flex;
   gap: 24px;
   align-items: flex-end;
@@ -1091,4 +1143,183 @@ textarea::placeholder {
   right: 14px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.stepProcess {
+  display: flex;
+  gap: 24px;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 80px;
+  margin-top: 45px;
+}
+.stepProcess .line {
+  width: 100%;
+  height: 6px;
+  background-color: #e0e0e0;
+  margin: 0 auto;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  right: 7px;
+  z-index: -1;
+}
+.stepProcess .item {
+  color: #afafaf;
+  flex: 1 0 0;
+}
+.stepProcess .item.ac .circle {
+  background-color: var(--ff-6633);
+}
+.stepProcess .item.ac .name {
+  color: var(--151515);
+}
+.stepProcess .item.ac .state {
+  color: var(--ff-6633);
+}
+.stepProcess .item .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  margin-bottom: 24px;
+}
+.stepProcess .item .step {
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin-bottom: 12px;
+}
+.stepProcess .item .name {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.stepProcess .item .state {
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #afafaf;
+}
+
+.dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 21, 21, 0.2);
+}
+.dim .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 444px;
+  padding: 24px;
+  padding-top: 48px;
+  box-sizing: border-box;
+  border: solid 1px #707070;
+  background-color: #f4f4f4;
+}
+.dim .modal .modalClose {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+  background: url(../img/ic_removeAttach.svg) center no-repeat;
+}
+.dim .modal .tit {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.61;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+  margin-bottom: 12px;
+}
+.dim .modal p {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.61;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+  margin-bottom: 25px;
+}
+.dim .modal .btnWrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.dim .modal .btnWrap button {
+  flex: 1 0 0;
+}
+.dim .modal .btnWrap .btn-line {
+  border: 1px solid var(--ff-6633);
+  height: 36px;
+  min-width: 134px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--ff-6633);
+}
+.dim .modal .btnWrap .btn-line.grey {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--151515);
+  border: solid 1px #afafaf;
+  background-color: #f4f4f4;
+}
+.dim .modal .btnWrap .btn-fill {
+  border: 0;
+  height: 36px;
+  min-width: 134px;
+  background-color: var(--ff-6633);
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f4f4f4;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f4f4f4;
 }/*# sourceMappingURL=style.css.map */
