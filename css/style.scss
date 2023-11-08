@@ -95,6 +95,9 @@ h2 {
 @mixin btn-line() {
     .btn-line {
         // cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         border: 1px solid var(--ff-6633);
         height: 36px;
         min-width: 134px;
@@ -803,9 +806,42 @@ h2 {
         letter-spacing: normal;
         text-align: left;
         color: var(--151515);
-
+        .fileInfo {
+            margin-top: 16px;
+            font-family: Pretendard;
+            font-size: 14px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--151515);
+        }
+        .p-desc {
+            padding: 8px 0;
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--151515);
+        }
+        .rowFlex {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 24px;
+            input {
+                flex: 1 0 0;
+            }
+        }
         .list {
             margin-top: 28px;
+
+            
             .list-name {
                 font-size: 16px;
                 font-weight: bold;
@@ -840,6 +876,20 @@ h2 {
                     }
                 }
             }
+
+            &.listMulty {
+                .list-item,
+                .list-name {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    span {
+                        text-align: center;
+                        flex: 1 0 0;
+                        @include lineClamp();
+                    }
+                }
+            }
         }
 
         .flexEnd {
@@ -869,6 +919,25 @@ h2 {
         textarea {
             margin-top: 12px;
         }
+        .textArea {
+            position: relative;
+            textarea {
+                width: 100%;
+            }
+            .limit {
+                position: absolute;
+                bottom: 10px;
+                right: 14px;
+                font-size: 12px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: right;
+                color: #afafaf;
+            }
+        }
         .btnWrap {
             display: flex;
             gap: 24px;
@@ -889,6 +958,7 @@ h2 {
         }
         select,
         input[type="text"] {
+            box-sizing: border-box;
             padding: 15px 14px 14px;
             border: solid 1px #afafaf;
             font-size: 16px;
@@ -939,6 +1009,40 @@ h2 {
             letter-spacing: normal;
             text-align: left;
             color: var(--151515);
+            &.upLoadFileWrap {
+                align-items: flex-start;
+                .attachedFile,
+                .dropHere {
+                    width: 282px;
+                    height: 282px;
+                    box-sizing: border-box;
+                    flex: 0 0 0;
+                    aspect-ratio: 1/1;
+                }
+                .attachedFile {
+                    position: relative;
+                    .numbering {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        min-width: 28px;
+                        min-height: 28px;
+                        background-color: var(--ff-6633);
+                        font-family: Pretendard;
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #f4f4f4;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
             .dropHere {
                 cursor: grab;
                 flex: 0 0 auto;
@@ -957,6 +1061,11 @@ h2 {
                 line-height: 1.5;
                 letter-spacing: normal;
                 color: var(--151515);
+            }
+            .attachedFileWrap {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
             }
             .attachedFile {
                 flex: 0 0 auto;
@@ -983,6 +1092,32 @@ h2 {
                     align-items: center;
                 }
             }
+        }
+
+        .link {
+            font-family: Pretendard;
+            font-size: 14px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--ff-6633);
+        }
+        .edit {
+            font-size: 14px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            text-decoration: underline;
+            color: #afafaf;
+            background-color: transparent;
+            padding: 0;
+            margin-left: -12px;
         }
     }
 }
@@ -1014,6 +1149,37 @@ label.radio {
         }
     }
     input[type="radio"] {
+        display: none;
+    }
+}
+
+label.checkbox {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--151515);
+    color: var(--151515);
+    cursor: pointer;
+    &::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../img/ic_checkboxOff.svg) center no-repeat;
+    }
+    &:has(:checked) {
+        &::before {
+            background: url(../img/ic_checkboxOn.svg) center no-repeat;
+        }
+    }
+    input[type="checkbox"] {
         display: none;
     }
 }

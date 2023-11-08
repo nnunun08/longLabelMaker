@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+
+    <div class="root">
+        <div data-include-path="./compo_lnb.html"></div>
+        
+        <div class="section-contents">
+            <div class="pageTit" style="margin-bottom: 40px;">
+                <h1>Long Label 추가</h1>
+                <div class="btnWrap">
+                    <button class="preview">
+                        미리보기
+                    </button>
+                    <button class="btn-fill" onclick="confirm()">저장하기</button>
+                </div>
+            </div>
+
+            <div class="stepProcess">
+                <div class="line"></div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 01</div>
+                    <div class="name">기본정보</div>
+                    <div class="state">32% 작성중</div>
+                </div>
+                <div class="item ac">
+                    <div class="circle"></div>
+                    <div class="step">STEP 02</div>
+                    <div class="name">소재</div>
+                    <div class="state">32% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 03</div>
+                    <div class="name">제조</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 04</div>
+                    <div class="name">여정</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 05</div>
+                    <div class="name">패키지</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 06</div>
+                    <div class="name">폐기</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 07</div>
+                    <div class="name">인증마크</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 08</div>
+                    <div class="name">키워드</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 09</div>
+                    <div class="name">안내 및 홍보</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 10</div>
+                    <div class="name">케어가이드</div>
+                    <div class="state">작성전</div>
+                </div>
+            </div>
+
+            <div class="dualSection">
+                <div class="guideWord">
+                    <b>이 제품이<br>
+                        만들어진 과정을<br>
+                        시작해 볼게요.</b><br>
+                        제품의 소재 정보를<br>
+                        입력해주세요.
+                </div>
+                <div class="rightSection">
+                    <div class="tray">
+                        <span>제조연월</span>
+                        <div class="rowFlex">
+                            <input type="text" placeholder="입력해주세요" style="max-width: 430px;">
+                            <input type="text" placeholder="혼용률" style="max-width: 134px;">
+                            <input type="text" placeholder="원산지" style="max-width: 292px;">
+                            <div class="btn-line" style="width:143px; height: 46px;">추가하기</div>
+                        </div>
+
+                        <div class="list listMulty" style="padding-right: 168px;">
+                            <div class="list-name">
+                                <div style="padding-left: 20px;"></div>
+                                <span style="max-width: 385px;">소재명</span>
+                                <span style="max-width: 134px;">혼용률</span>
+                                <span style="max-width: 292px;">원산지</span>
+                            </div>
+                            <div class="listWrap" style="max-width: 904px;">
+                                <div class="list-item">
+                                    <button class="remove"></button>
+                                    <span style="max-width: 385px;">소재명이 입력됩니다</span>
+                                    <span style="max-width: 134px;">38%</span>
+                                    <span style="max-width: 292px;">원산지가 입력됩니다</span>
+                                </div>
+                                <div class="list-item">
+                                    <button class="remove"></button>
+                                    <span style="max-width: 385px;">소재명이 입력됩니다</span>
+                                    <span style="max-width: 134px;">38%</span>
+                                    <span style="max-width: 292px;">원산지가 입력됩니다</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <span>이 제품의 소재가 가지는 특징은 무엇인가요?</span>
+                        <div class="textArea">
+                            <textarea placeholder="입력해주세요"></textarea>
+                            <span class="limit">0/1000</span>
+                        </div>
+                        <div class="rowFlex" style="gap: 20px; margin-top: 8px;">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                사진 추가
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                영상 추가
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <span>이 제품의 소재가 가지는 특징은 무엇인가요?</span>
+                        <div class="textArea">
+                            <textarea placeholder="입력해주세요"></textarea>
+                        </div>
+                        <div class="rowFlex" style="gap: 20px; margin-top: 8px;">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                사진 추가
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                영상 추가
+                            </label>
+                        </div>
+                        <p class="p-desc">이미지는 최대 6개까지 등록 가능합니다. 이미지를 드래그하여 순서를 설정할 수 있습니다.</p>
+                        <div class="file upLoadFileWrap">
+                            <div>
+                                <div class="dropHere">
+                                    <img src="./img/ic_dragdrop.svg" alt="">
+                                    Drag your photo here
+                                </div>
+                                <div class="fileInfo">
+                                    권장 해상도 : 600 x 600<br>
+                                    최소 해상도 : 200x200<br>
+                                    JPG 권장
+                                </div>
+                            </div>
+                            <div class="attachedFileWrap">
+                                <div class="attachedFile">
+                                    <img src="./img/resource/item_thumb.png" alt="">
+                                    <button class="remove">
+                                        <img src="./img/ic_removeAttach.svg" alt="">
+                                    </button>
+                                    <div class="numbering">1</div>
+                                </div>
+                                <div class="attachedFile">
+                                    <img src="./img/resource/item_thumb.png" alt="">
+                                    <button class="remove">
+                                        <img src="./img/ic_removeAttach.svg" alt="">
+                                    </button>
+                                    <div class="numbering">2</div>
+                                </div>
+                                <div class="attachedFile">
+                                    <img src="./img/resource/item_thumb.png" alt="">
+                                    <button class="remove">
+                                        <img src="./img/ic_removeAttach.svg" alt="">
+                                    </button>
+                                    <div class="numbering">3</div>
+                                </div>
+                                <div class="attachedFile">
+                                    <img src="./img/resource/item_thumb.png" alt="">
+                                    <button class="remove">
+                                        <img src="./img/ic_removeAttach.svg" alt="">
+                                    </button>
+                                    <div class="numbering">4</div>
+                                </div>
+                                <div class="attachedFile">
+                                    <img src="./img/resource/item_thumb.png" alt="">
+                                    <button class="remove">
+                                        <img src="./img/ic_removeAttach.svg" alt="">
+                                    </button>
+                                    <div class="numbering">5</div>
+                                </div>
+                                <div class="attachedFile">
+                                    <img src="./img/resource/item_thumb.png" alt="">
+                                    <button class="remove">
+                                        <img src="./img/ic_removeAttach.svg" alt="">
+                                    </button>
+                                    <div class="numbering">6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <span>이 제품의 소재가 가지는 특징은 무엇인가요?</span>
+                        <div class="textArea">
+                            <textarea placeholder="입력해주세요"></textarea>
+                            <span class="limit">0/1000</span>
+                        </div>
+                        <div class="rowFlex" style="gap: 20px; margin-top: 8px;">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                사진 추가
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" checked>
+                                영상 추가
+                            </label>
+                            <input type="text" placeholder="입력해주세요" style="height:48px">
+                            <div class="btn-line" style="height:48px">저장</div>
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <span>이 제품의 소재가 가지는 특징은 무엇인가요?</span>
+                        <div class="textArea">
+                            <textarea placeholder="입력해주세요"></textarea>
+                            <span class="limit">0/1000</span>
+                        </div>
+                        <div class="rowFlex" style="gap: 20px; margin-top: 8px;">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                사진 추가
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" checked>
+                                영상 추가
+                            </label>
+                            <span class="link">http://www.longlabel.com</span>
+                            <button class="edit">수정하기</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>

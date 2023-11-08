@@ -770,6 +770,9 @@ h2 {
   padding-bottom: 62px;
 }
 .rightSection .btn-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--ff-6633);
   height: 36px;
   min-width: 134px;
@@ -806,6 +809,38 @@ h2 {
   text-align: left;
   color: var(--151515);
 }
+.rightSection .tray .fileInfo {
+  margin-top: 16px;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.rightSection .tray .p-desc {
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.rightSection .tray .rowFlex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+.rightSection .tray .rowFlex input {
+  flex: 1 0 0;
+}
 .rightSection .tray .list {
   margin-top: 28px;
 }
@@ -841,6 +876,22 @@ h2 {
 }
 .rightSection .tray .list .listWrap .list-item + .list-item {
   margin-top: 12px;
+}
+.rightSection .tray .list.listMulty .list-item,
+.rightSection .tray .list.listMulty .list-name {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.rightSection .tray .list.listMulty .list-item span,
+.rightSection .tray .list.listMulty .list-name span {
+  text-align: center;
+  flex: 1 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
 }
 .rightSection .tray .flexEnd {
   display: flex;
@@ -881,6 +932,25 @@ h2 {
 .rightSection .tray textarea {
   margin-top: 12px;
 }
+.rightSection .tray .textArea {
+  position: relative;
+}
+.rightSection .tray .textArea textarea {
+  width: 100%;
+}
+.rightSection .tray .textArea .limit {
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #afafaf;
+}
 .rightSection .tray .btnWrap {
   display: flex;
   gap: 24px;
@@ -903,6 +973,9 @@ h2 {
   font-size: 18px;
 }
 .rightSection .tray .btnWrap .btn-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--ff-6633);
   height: 36px;
   min-width: 134px;
@@ -925,6 +998,7 @@ h2 {
 }
 .rightSection .tray select,
 .rightSection .tray input[type=text] {
+  box-sizing: border-box;
   padding: 15px 14px 14px;
   border: solid 1px #afafaf;
   font-size: 16px;
@@ -981,6 +1055,40 @@ h2 {
   text-align: left;
   color: var(--151515);
 }
+.rightSection .tray .file.upLoadFileWrap {
+  align-items: flex-start;
+}
+.rightSection .tray .file.upLoadFileWrap .attachedFile,
+.rightSection .tray .file.upLoadFileWrap .dropHere {
+  width: 282px;
+  height: 282px;
+  box-sizing: border-box;
+  flex: 0 0 0;
+  aspect-ratio: 1/1;
+}
+.rightSection .tray .file.upLoadFileWrap .attachedFile {
+  position: relative;
+}
+.rightSection .tray .file.upLoadFileWrap .attachedFile .numbering {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 28px;
+  min-height: 28px;
+  background-color: var(--ff-6633);
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .rightSection .tray .file .dropHere {
   cursor: grab;
   flex: 0 0 auto;
@@ -999,6 +1107,11 @@ h2 {
   line-height: 1.5;
   letter-spacing: normal;
   color: var(--151515);
+}
+.rightSection .tray .file .attachedFileWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .rightSection .tray .file .attachedFile {
   flex: 0 0 auto;
@@ -1026,6 +1139,31 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.rightSection .tray .link {
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--ff-6633);
+}
+.rightSection .tray .edit {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: underline;
+  color: #afafaf;
+  background-color: transparent;
+  padding: 0;
+  margin-left: -12px;
+}
 
 label.radio {
   display: inline-flex;
@@ -1052,6 +1190,35 @@ label.radio:has(:checked)::before {
   background: url(../img/ic_radioCheck.svg) center no-repeat;
 }
 label.radio input[type=radio] {
+  display: none;
+}
+
+label.checkbox {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+  color: var(--151515);
+  cursor: pointer;
+}
+label.checkbox::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/ic_checkboxOff.svg) center no-repeat;
+}
+label.checkbox:has(:checked)::before {
+  background: url(../img/ic_checkboxOn.svg) center no-repeat;
+}
+label.checkbox input[type=checkbox] {
   display: none;
 }
 
@@ -1100,6 +1267,9 @@ textarea::placeholder {
   box-sizing: border-box;
 }
 .labelItem .btn-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--ff-6633);
   height: 36px;
   min-width: 134px;
@@ -1276,6 +1446,9 @@ textarea::placeholder {
   flex: 1 0 0;
 }
 .dim .modal .btnWrap .btn-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--ff-6633);
   height: 36px;
   min-width: 134px;
