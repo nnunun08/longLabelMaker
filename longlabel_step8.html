@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+
+    <div class="root">
+        <div data-include-path="./compo_lnb.html"></div>
+        
+        <div class="section-contents">
+            <div class="pageTit" style="margin-bottom: 40px;">
+                <h1>Long Label 추가</h1>
+                <div class="btnWrap">
+                    <button class="preview">
+                        미리보기
+                    </button>
+                    <button class="btn-fill" onclick="confirm()">저장하기</button>
+                </div>
+            </div>
+
+            <div class="stepProcess">
+                <div class="line"></div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 01</div>
+                    <div class="name">기본정보</div>
+                    <div class="state">32% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 02</div>
+                    <div class="name">소재</div>
+                    <div class="state">32% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 03</div>
+                    <div class="name">제조</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 04</div>
+                    <div class="name">여정</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 05</div>
+                    <div class="name">패키지</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 06</div>
+                    <div class="name">폐기</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 07</div>
+                    <div class="name">인증마크</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item ac">
+                    <div class="circle"></div>
+                    <div class="step">STEP 08</div>
+                    <div class="name">키워드</div>
+                    <div class="state">0% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 09</div>
+                    <div class="name">안내 및 홍보</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 10</div>
+                    <div class="name">케어가이드</div>
+                    <div class="state">작성전</div>
+                </div>
+            </div>
+
+            <div class="dualSection">
+                <div class="guideWord">
+                    <b>
+                        브랜드가 바라볼 때<br>
+                        제품의 특징을<br>
+                        가장 잘 나타내는<br>
+                        키워드를 선택해 주세요
+                    </b>
+                </div>
+                <div class="rightSection">
+
+                    <div class="tray">
+
+                        <div class="grid3Column">
+                            <div class="item"><label class="checkbox"><input type="checkbox"><span class="fontLarge">업사이클링</span></label></div>
+                            <div class="item"><label class="checkbox"><input type="checkbox"><span class="fontLarge">탄소절감</span></label></div>
+                            <div class="item"><label class="checkbox"><input type="checkbox"><span class="fontLarge">폐기물 제로</span></label></div>
+                            <div class="item"><label class="checkbox"><input type="checkbox"><span class="fontLarge">리사이클링</span></label></div>
+                            <div class="item"><label class="checkbox"><input type="checkbox"><span class="fontLarge">오염물질 관리</span></label></div>
+                            <div class="item"><label class="checkbox"><input type="checkbox"><span class="fontLarge">공정무역</span></label></div>
+                            <div class="item"><label class="checkbox"><input type="checkbox"><span class="fontLarge">비건</span></label></div>
+                            <div class="item"><label class="checkbox"><input type="checkbox"><span class="fontLarge">물 사용 절감</span></label></div>
+                            <div class="item"><label class="checkbox"><input type="checkbox"><span class="fontLarge">친환경 패키지</span></label></div>
+                            <div class="item"><label class="checkbox"><input type="checkbox"><span class="fontLarge">수선/재사용</span></label></div>
+                            <div class="item"><label class="checkbox"><input type="checkbox"><span class="fontLarge">새로운 기술</span></label></div>
+                        </div>
+
+                        <button class="btn-line" style="height: 48px; gap: 8px; margin-top: 94px;">
+                            <img src="./img/ic_plus.svg" alt="">추가하기
+                        </button>
+                    </div>
+
+                    <div class="tray">
+                        <span>키워드 추가</span>
+                        <div class="rowFlex" style="gap: 20px; margin-top: 8px;">
+                            <input type="text" placeholder="입력해주세요" style="height:48px">
+                            <div class="btn-line fontSlim" style="height:48px">저장</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>

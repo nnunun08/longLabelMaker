@@ -110,6 +110,9 @@ h2 {
         letter-spacing: normal;
         text-align: center;
         color: var(--ff-6633);
+        &.fontSlim {
+            font-weight: 500
+        }
         @content;
     }
 }
@@ -147,6 +150,9 @@ h2 {
         letter-spacing: normal;
         text-align: center;
         color: #f4f4f4;
+        &.fontSlim {
+            font-weight: 500
+        }
         @content;
     }
 }
@@ -850,7 +856,105 @@ h2 {
         letter-spacing: normal;
         text-align: left;
         color: var(--151515);
+        .grid2Column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px 0;
+            .item {
+                width: 50%;
+            }
+        }
+        .grid3Column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 44px 0;
+            .item {
+                width: 390px;
+            }
+        }
 
+        .attach {
+            font-size: 14px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--ff-6633);
+            text-decoration: underline;
+        }
+
+        .certi {
+            display: flex;
+            align-items: center;
+            .thumb {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-left: 20px;
+                margin-right: 35px;
+                background-color: #d0d0d0;
+            }
+            .textWrap {
+                position: relative;  
+                margin-top: -10px;
+            }
+            .name {
+                font-family: Pretendard;
+                line-height: 1.17;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: -0.3px;
+                color: var(--151515);
+            }
+            .bottom {
+                position: absolute;
+                top: calc(100% + 12px);
+                left: 0;
+            }
+            .desc {
+                font-family: Pretendard;
+                font-size: 18px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.17;
+                letter-spacing: -0.27px;
+                text-align: left;
+                color: #afafaf;
+            }
+            
+            .docu {
+                display: flex;
+                align-items: center;
+                .remove {
+                    border: 0;
+                    width: 20px;
+                    height: 20px;
+                    background: url(../img/ic_listRemove.svg) center no-repeat;
+                }
+                .input {
+                    padding: 0;
+                    border: 0;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: var(--151515);
+                    &::placeholder {
+                        color: var(--151515);
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
 
         .topTitWrap {
             justify-content: space-between;
@@ -969,6 +1073,8 @@ h2 {
                     }
                 }
             }
+
+            
         }
 
         .flexEnd {
@@ -1129,6 +1235,7 @@ h2 {
                 left: 300px;
             }
             .dropHere {
+                font-family: 'Montserrat';
                 cursor: grab;
                 flex: 0 0 auto;
                 width: 272px;
@@ -1233,7 +1340,7 @@ label.radio {
             background: url(../img/ic_radioCheck.svg) center no-repeat;
         }
     }
-    input[type="radio"] {
+    input {
         display: none;
     }
 }
@@ -1250,8 +1357,18 @@ label.checkbox {
     letter-spacing: normal;
     text-align: left;
     color: var(--151515);
-    color: var(--151515);
     cursor: pointer;
+    .fontLarge {
+        margin-left: 16px;
+        font-size: 20px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--151515);
+    }
     &::before {
         content: '';
         display: block;
@@ -1264,7 +1381,7 @@ label.checkbox {
             background: url(../img/ic_checkboxOn.svg) center no-repeat;
         }
     }
-    input[type="checkbox"] {
+    input {
         display: none;
     }
 }

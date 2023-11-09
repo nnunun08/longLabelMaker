@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+
+    <div class="root">
+        <div data-include-path="./compo_lnb.html"></div>
+        
+        <div class="section-contents">
+            <div class="pageTit" style="margin-bottom: 40px;">
+                <h1>Long Label 추가</h1>
+                <div class="btnWrap">
+                    <button class="preview">
+                        미리보기
+                    </button>
+                    <button class="btn-fill" onclick="confirm()">저장하기</button>
+                </div>
+            </div>
+
+            <div class="stepProcess">
+                <div class="line"></div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 01</div>
+                    <div class="name">기본정보</div>
+                    <div class="state">32% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 02</div>
+                    <div class="name">소재</div>
+                    <div class="state">32% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 03</div>
+                    <div class="name">제조</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 04</div>
+                    <div class="name">여정</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 05</div>
+                    <div class="name">패키지</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 06</div>
+                    <div class="name">폐기</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 07</div>
+                    <div class="name">인증마크</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item ac">
+                    <div class="circle"></div>
+                    <div class="step">STEP 08</div>
+                    <div class="name">키워드</div>
+                    <div class="state">0% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 09</div>
+                    <div class="name">안내 및 홍보</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 10</div>
+                    <div class="name">케어가이드</div>
+                    <div class="state">작성전</div>
+                </div>
+            </div>
+
+            <div class="dualSection">
+                <div class="guideWord">
+                    <b>
+                        이제 거의 다 왔네요.<br>
+                    </b>
+                    혹시 인증마크를<br>
+                    받은 것이 있다면<br>
+                    더 자랑해 주세요
+                </div>
+                <div class="rightSection">
+
+                    <div class="tray">
+
+                        <div class="grid2Column">
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox" checked>
+                                    </label>
+                                    <div class="thumb">
+                                        <div class="imgWrap">
+                                            <img src="./img/resource/item_thumb.png" alt="">
+                                        </div>
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">GOTS</div>
+                                        <div class="desc">
+                                            Global Organic<br>
+                                            Textile Standard
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="docu">
+                                                <button class="remove"></button>
+                                                <input class="input" type="text" placeholder="서류 이름을 적어주세요">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                    <div class="thumb">
+                                        <div class="imgWrap">
+                                            
+                                        </div>
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">FSC</div>
+                                        <div class="desc">
+                                            Forest Stewardship Council
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="attach" href="#">증빙서류 첨부</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                    <div class="thumb">
+
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">OCS</div>
+                                        <div class="desc">
+                                            Organic Content Standard
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="attach" href="#">증빙서류 첨부</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                    <div class="thumb">
+                                        <div class="imgWrap">
+                                            
+                                        </div>
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">PEFC</div>
+                                        <div class="desc">
+                                            Programme for the<br>
+                                            Endorsement of Forest<br>
+                                            Certificati
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="attach" href="#">증빙서류 첨부</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                    <div class="thumb">
+
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">ERTS</div>
+                                        <div class="desc">
+                                            Ecological & Recycled<br>
+                                            Textiles Standard
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="attach" href="#">증빙서류 첨부</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                    <div class="thumb">
+                                        <div class="imgWrap">
+                                            
+                                        </div>
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">GOTS</div>
+                                        <div class="desc">
+                                            Global Organic<br>
+                                            Textile Standard
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="attach" href="#">증빙서류 첨부</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                    <div class="thumb">
+                                        <div class="imgWrap">
+
+                                        </div>
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">GRS</div>
+                                        <div class="desc">
+                                            Global Recycle Standard
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="attach" href="#">증빙서류 첨부</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                    <div class="thumb">
+                                        <div class="imgWrap">
+                                        </div>
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">bluesign®</div>
+                                        <div class="desc">
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="attach" href="#">증빙서류 첨부</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                    <div class="thumb">
+                                        <div class="imgWrap">
+                                        </div>
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">RDS</div>
+                                        <div class="desc">
+                                            Responsible Down Standard
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="attach" href="#">증빙서류 첨부</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                    <div class="thumb">
+                                        <div class="imgWrap">
+                                            
+                                        </div>
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">C2C</div>
+                                        <div class="desc">
+                                            Cradle to Cradle
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="attach" href="#">증빙서류 첨부</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                    <div class="thumb">
+                                        <div class="imgWrap">
+                                            
+                                        </div>
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">RWS</div>
+                                        <div class="desc">
+                                            Responsible Wool Standard
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="attach" href="#">증빙서류 첨부</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="certi">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                    <div class="thumb">
+                                        <div class="imgWrap">
+                                            
+                                        </div>
+                                    </div>  
+
+                                    <div class="textWrap">
+                                        <div class="name">Oeko-Tex</div>
+                                        <div class="desc">
+                                        </div>
+                                        <div class="bottom">
+                                            <a class="attach" href="#">증빙서류 첨부</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-line" style="height: 48px; gap: 8px; margin-top: 28px;">
+                            <img src="./img/ic_plus.svg" alt="">추가하기
+                        </button>
+                    </div>
+
+                    <div class="tray">
+                        <div class="rowFlex topTitWrap">
+                            <span>인증마크 추가하기</span>
+                        </div>
+                        <div class="file">
+                            <div class="dropHere">
+                                <img src="./img/ic_dragdrop.svg" alt="">
+                                Drag your photo here
+                            </div>
+
+                            <div class="colFlex">
+                                <input type="text" placeholder="도시명을 입력해주세요">
+                                <a class="attach" href="#">증빙서류 첨부</a>
+                            </div>
+
+                            <button class="btn-fill fontSlim" style="width: 114px;height: 42px; position: absolute; bottom: 0; right: 0;">추가하기</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>
