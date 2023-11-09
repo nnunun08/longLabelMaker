@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+
+    <div class="root">
+        <div data-include-path="./compo_lnb.html"></div>
+        
+        <div class="section-contents">
+            <div class="pageTit" style="margin-bottom: 40px;">
+                <h1>Long Label 추가</h1>
+                <div class="btnWrap">
+                    <button class="preview">
+                        미리보기
+                    </button>
+                    <button class="btn-fill" onclick="confirm()">저장하기</button>
+                </div>
+            </div>
+
+            <div class="stepProcess">
+                <div class="line"></div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 01</div>
+                    <div class="name">기본정보</div>
+                    <div class="state">32% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 02</div>
+                    <div class="name">소재</div>
+                    <div class="state">32% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 03</div>
+                    <div class="name">제조</div>
+                    <div class="state">0% 작성중</div>
+                </div>
+                <div class="item ac">
+                    <div class="circle"></div>
+                    <div class="step">STEP 04</div>
+                    <div class="name">여정</div>
+                    <div class="state">0% 작성중</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 05</div>
+                    <div class="name">패키지</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 06</div>
+                    <div class="name">폐기</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 07</div>
+                    <div class="name">인증마크</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 08</div>
+                    <div class="name">키워드</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 09</div>
+                    <div class="name">안내 및 홍보</div>
+                    <div class="state">작성전</div>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 10</div>
+                    <div class="name">케어가이드</div>
+                    <div class="state">작성전</div>
+                </div>
+            </div>
+
+            <div class="dualSection">
+                <div class="guideWord">
+                    <b>
+                        제품이<br>
+                        만들어지기까지의<br>
+                        여정을 만들어 볼게요.<br>
+                    </b>
+                    국가와 도시 정보만<br>
+                    입력하면 됩니다.<br>
+                    사진이 있다면<br>
+                    더 멋진 여정을<br>
+                    표현할 수 있어요 :)<br>
+                </div>
+                <div class="rightSection">
+
+                    <div class="tray">
+                        <div class="rowFlex topTitWrap">
+                            <span>소재</span>
+                            <div class="topTitRight">
+                                여정의 제목을 수정할 수 있어요
+                                <a class="modify" href="#">수정하기</a>
+                            </div>
+                        </div>
+                        <div class="file">
+                            <div class="dropHere">
+                                <img src="./img/ic_dragdrop.svg" alt="">
+                                Drag your photo here
+                            </div>
+                            <div class="colFlex">
+                                <input type="text" placeholder="도시명을 입력해주세요">
+                                <select>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                </select>
+                            </div>
+                            <span class="absolDesc">권장 해상도 : 600 x 600 / 최소 해상도 : 100x100 / JPG 권장</span>
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <div class="rowFlex topTitWrap">
+                            <span>디자인</span>
+                            <div class="topTitRight">
+                                여정의 제목을 수정할 수 있어요
+                                <a class="modify" href="#">수정하기</a>
+                            </div>
+                        </div>
+                        <div class="file">
+                            <div class="attachedFile">
+                                <img src="./img/resource/item_thumb.png" alt="">
+                                <button class="remove">
+                                    <img src="./img/ic_removeAttach.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="colFlex">
+                                <input type="text" placeholder="도시명을 입력해주세요">
+                                <select>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                </select>
+                            </div>
+                            <span class="absolDesc">권장 해상도 : 600 x 600 / 최소 해상도 : 100x100 / JPG 권장</span>
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <div class="rowFlex topTitWrap">
+                            <span>포장</span>
+                            <div class="topTitRight">
+                                여정의 제목을 수정할 수 있어요
+                                <a class="modify" href="#">수정하기</a>
+                            </div>
+                        </div>
+                        <div class="file">
+                            <div class="attachedFile">
+                                <img src="./img/resource/item_thumb.png" alt="">
+                                <button class="remove">
+                                    <img src="./img/ic_removeAttach.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="colFlex">
+                                <input type="text" placeholder="도시명을 입력해주세요">
+                                <select>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                </select>
+                            </div>
+                            <span class="absolDesc">권장 해상도 : 600 x 600 / 최소 해상도 : 100x100 / JPG 권장</span>
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <div class="rowFlex topTitWrap">
+                            <span>물류/매장</span>
+                            <div class="topTitRight">
+                                여정의 제목을 수정할 수 있어요
+                                <a class="modify" href="#">수정하기</a>
+                            </div>
+                        </div>
+                        <div class="file">
+                            <div class="attachedFile">
+                                <img src="./img/resource/item_thumb.png" alt="">
+                                <button class="remove">
+                                    <img src="./img/ic_removeAttach.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="colFlex">
+                                <input type="text" placeholder="도시명을 입력해주세요">
+                                <select>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                </select>
+                            </div>
+                            <span class="absolDesc">권장 해상도 : 600 x 600 / 최소 해상도 : 100x100 / JPG 권장</span>
+                        </div>
+                    </div>
+
+                    <div class="tray">
+                        <span>여정</span>
+                        <input type="text" placeholder="도시명을 입력해주세요">
+                        <div class="file">
+                            <div class="dropHere">
+                                <img src="./img/ic_dragdrop.svg" alt="">
+                                Drag your photo here
+                            </div>
+                            <div class="colFlex">
+                                <input type="text" placeholder="도시명을 입력해주세요">
+                                <select>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                    <option value="선택해 주세요">선택해 주세요</option>
+                                </select>
+                            </div>
+                            <span class="absolDesc">권장 해상도 : 600 x 600 / 최소 해상도 : 100x100 / JPG 권장</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-line" style="height: 48px; gap: 8px; margin-top: 4px;">
+                        <img src="./img/ic_plus.svg" alt="">추가하기
+                    </button>
+
+                    <button class="btn-fill-second">
+                        이동거리 계산하기
+                    </button>
+
+                    <div class="distance">
+                        총 이동거리
+                        <div class="result">105,000km</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>

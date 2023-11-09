@@ -113,6 +113,25 @@ h2 {
         @content;
     }
 }
+@mixin btn-fill-second() {
+    .btn-fill-second {
+        border: 0;
+        height: 48px;
+        min-width: 134px;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--ff-6633);
+        background-color: #ffe5d5;
+    }
+    @content;
+}
+@include btn-fill-second;
+
 @mixin btn-fill() {
     .btn-fill {
         // cursor: pointer;
@@ -791,6 +810,32 @@ h2 {
     flex-direction: column;
     gap: 20px;
     padding-bottom: 62px;
+
+    .distance {
+        padding-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: var(--151515);
+        .result {
+            font-size: 28px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: var(--ff-6633);
+
+        }
+    }
+
     .tray {
         padding: 20px;
         background-color: #fff;
@@ -802,10 +847,44 @@ h2 {
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
-        line-height: 1.05;
         letter-spacing: normal;
         text-align: left;
         color: var(--151515);
+
+
+        .topTitWrap {
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            .topTitRight {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #707070;
+                .modify {
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: var(--151515);
+                }
+            }
+        }
+        .colFlex {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            flex: 1 0 0;
+            gap: 20px;
+        }
         .fileInfo {
             margin-top: 16px;
             font-family: Pretendard;
@@ -997,6 +1076,7 @@ h2 {
             color: var(--151515);
         }
         .file {
+            position: relative;
             font-family: 'Pretendard';
             display: flex;
             gap: 24px;
@@ -1042,6 +1122,11 @@ h2 {
                         align-items: center;
                     }
                 }
+            }
+            .absolDesc {
+                position: absolute;
+                bottom: 0;
+                left: 300px;
             }
             .dropHere {
                 cursor: grab;

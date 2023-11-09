@@ -82,6 +82,21 @@ h2 {
   padding: 73px 24px 46px;
 }
 
+.btn-fill-second {
+  border: 0;
+  height: 48px;
+  min-width: 134px;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--ff-6633);
+  background-color: #ffe5d5;
+}
+
 .pageTit {
   padding-bottom: 24px;
   border-bottom: 1px solid #afafaf;
@@ -793,6 +808,29 @@ h2 {
   justify-content: center;
   gap: 8px;
 }
+.rightSection .distance {
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--151515);
+}
+.rightSection .distance .result {
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--ff-6633);
+}
 .rightSection .tray {
   padding: 20px;
   background-color: #fff;
@@ -804,10 +842,42 @@ h2 {
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.05;
   letter-spacing: normal;
   text-align: left;
   color: var(--151515);
+}
+.rightSection .tray .topTitWrap {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.rightSection .tray .topTitWrap .topTitRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+}
+.rightSection .tray .topTitWrap .topTitRight .modify {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.rightSection .tray .colFlex {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  flex: 1 0 0;
+  gap: 20px;
 }
 .rightSection .tray .fileInfo {
   margin-top: 16px;
@@ -1042,6 +1112,7 @@ h2 {
   color: var(--151515);
 }
 .rightSection .tray .file {
+  position: relative;
   font-family: "Pretendard";
   display: flex;
   gap: 24px;
@@ -1088,6 +1159,11 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.rightSection .tray .file .absolDesc {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
 }
 .rightSection .tray .file .dropHere {
   cursor: grab;
