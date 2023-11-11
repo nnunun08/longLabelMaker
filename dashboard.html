@@ -372,6 +372,8 @@
         const ctx = document.getElementById('mixChart');
         const ctx1 = document.getElementById('myChart1');
         const ctx2 = document.getElementById('myChart2');
+
+        const image = document.getElementById("source1");
         
         new Chart(ctx1, {
             type: 'doughnut',
@@ -454,17 +456,20 @@
                 elements: {
                     point: {
                         radius: 9,
-                        backgroundColor: {
-
-                        },
-                        borderWidth: 1,
+                        backgroundColor: 'blue',
+                        borderWidth: 10,
                         borderColor: 'white',
                         hoverRadius: 9
                     }
+                },
+                tooltips: {
+                    backgroundColor : 'rgba(0, 0, 0, 1)'
                 }
             }
         });
     </script>
+
+    
 
     
     <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
