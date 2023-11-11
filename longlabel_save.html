@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+
+    <div class="root">
+        <div data-include-path="./compo_lnb.html"></div>
+        
+        <div class="section-contents">
+            <div class="pageTit" style="margin-bottom: 40px;">
+                <h1>Long Label 추가</h1>
+                <div class="btnWrap">
+                    <button class="preview">
+                        미리보기
+                    </button>
+                    <button class="btn-fill" onclick="confirm()">저장하기</button>
+                </div>
+            </div>
+
+            <div class="dualSection">
+                <div class="guideWord">
+                    <b>
+                        입력한 정보는<br>
+                        LONG LABEL 팀의<br>
+                        확인 과정을 거친 후<br>
+                        최종 공개됩니다.
+                    </b>
+                </div>
+                <div class="rightSection">
+
+                    <div class="tray" style="padding: 40px 35px; margin-bottom: 20px;">
+
+                        <span class="subTit">
+                            위 정보는 LONG LABEL 사이트 Archive 메뉴를 통해 더 많은 사람들에게 알릴 수 있습니다.<br>
+                            정보 연결에 동의하시나요?
+                        </span>
+
+                        <div class="item" style="width: 100%;"><label class="checkbox"><input type="checkbox"><span class="fontLarge">네, 동의합니다.</span></label></div>
+                        <div class="item" style="width: 100%; margin-top: 17px;"><label class="checkbox"><input type="checkbox"><span class="fontLarge">아니오, 동의하지 않습니다.</span></label></div>
+
+                    </div>
+                    
+                    <div class="btnWrap">
+                        <button class="btn-fill" style="width:300px; height: 48px; float:right; margin-left: 20px;">Long Label 팀에게 확인요청</button>
+                        <button class="btn-line" style="width:300px; height: 48px; float:right;">미리보기</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>

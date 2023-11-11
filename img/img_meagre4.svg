@@ -1,0 +1,19 @@
+<svg id="img_meagre4" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <g id="그룹_3532" data-name="그룹 3532" transform="translate(-676 -459)">
+    <rect id="사각형_694" data-name="사각형 694" width="150" height="150" transform="translate(676 459)" fill="none"/>
+    <text id="뉘어서" transform="translate(751 540)" fill="#959595" font-size="16" font-family="Pretendard-SemiBold, Pretendard" font-weight="600"><tspan x="-20.742" y="0">뉘어서</tspan></text>
+    <g id="그룹_3566" data-name="그룹 3566" transform="translate(363.178 911.539)">
+      <circle id="타원_72" data-name="타원 72" cx="36.411" cy="36.411" r="36.411" transform="translate(351.412 -413.95)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="그룹_3565" data-name="그룹 3565">
+        <line id="선_499" data-name="선 499" y2="13.589" transform="translate(387.823 -341.128)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_500" data-name="선 500" y2="13.589" transform="translate(387.823 -427.539)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_501" data-name="선 501" x1="13.589" transform="translate(337.823 -377.539)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_502" data-name="선 502" x1="13.589" transform="translate(424.234 -377.539)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_503" data-name="선 503" x1="9.609" y1="9.609" transform="translate(352.468 -412.895)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_504" data-name="선 504" x1="9.609" y1="9.609" transform="translate(413.57 -351.793)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_505" data-name="선 505" x1="9.609" y2="9.609" transform="translate(352.468 -351.793)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_506" data-name="선 506" x1="9.609" y2="9.609" transform="translate(413.57 -412.895)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

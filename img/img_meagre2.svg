@@ -1,0 +1,23 @@
+<svg id="img_meagre2" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <g id="그룹_3532" data-name="그룹 3532" transform="translate(-676 -459)">
+    <rect id="사각형_694" data-name="사각형 694" width="150" height="150" transform="translate(676 459)" fill="none"/>
+    <text id="옷걸이" transform="translate(751 540)" fill="#959595" font-size="16" font-family="Pretendard-SemiBold, Pretendard" font-weight="600"><tspan x="-20.742" y="0">옷걸이</tspan></text>
+    <g id="그룹_3568" data-name="그룹 3568" transform="translate(470.518 911.539)">
+      <circle id="타원_73" data-name="타원 73" cx="36.411" cy="36.411" r="36.411" transform="translate(244.072 -413.95)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="그룹_3567" data-name="그룹 3567">
+        <line id="선_507" data-name="선 507" y2="13.589" transform="translate(280.483 -341.128)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_508" data-name="선 508" y2="13.589" transform="translate(280.483 -427.539)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_509" data-name="선 509" x1="13.589" transform="translate(230.483 -377.539)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_510" data-name="선 510" x1="13.589" transform="translate(316.894 -377.539)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_511" data-name="선 511" x1="9.609" y1="9.609" transform="translate(245.127 -412.895)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_512" data-name="선 512" x1="9.609" y1="9.609" transform="translate(306.229 -351.793)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_513" data-name="선 513" x1="9.609" y2="9.609" transform="translate(245.127 -351.793)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_514" data-name="선 514" x1="9.609" y2="9.609" transform="translate(306.229 -412.895)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <line id="선_516" data-name="선 516" y1="42.487" x2="42.487" transform="translate(244.339 -413.399)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="선_517" data-name="선 517" y1="38.105" x2="38.105" transform="translate(243.817 -413.921)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="선_518" data-name="선 518" y1="31.932" x2="31.932" transform="translate(244.19 -413.547)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="선_519" data-name="선 519" y1="23.353" x2="23.353" transform="translate(245.767 -411.971)" fill="none" stroke="#959595" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

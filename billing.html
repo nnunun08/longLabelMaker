@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 퍼블리싱을 위한 include js -->
+    <script src="./js/include.js"></script>
+
+</head>
+<body>
+
+    <div class="root">
+        <div data-include-path="./compo_lnb.html"></div>
+        
+        <div class="section-contents">
+            <div class="pageTit">
+                <h1>요금제/결제 관리</h1>
+            </div>
+
+            <div class="billing">
+                <div class="tray">
+                    <span class="tit">
+                        <span class="small">기업명</span>
+                        <span>롱레이블</span>
+                    </span>
+                </div>
+                <div class="tray">
+                    <span class="tit">
+                        <span class="small">가입일시</span>
+                        <span>2023.06.25 10:00</span>
+                    </span>
+                </div>
+                <div class="tray">
+                    <span class="tit" style="margin-bottom: 12px;">
+                        <span class="small">사용중인 서비스</span>
+                    </span>
+                    <div>
+                        <div class="service">
+                            <div class="left">
+                                <b>Pro</b>
+                                <p>* 사용량에 따른 탄력 요금제</p>
+                                <button class="btn-line">요금제 변경하기</button>
+                            </div>
+                            <div>
+                                서비스 이용시 제공하는 내용을 소개해주세요.<br>
+                                서비스 이용시 제공하는 내용을 소개해주세요.<br>
+                                서비스 이용시 제공하는 내용을 소개해주세요.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tray">
+                    <div class="tit">
+                        <span>이번 달 청구내역</span>
+                        <span class="orange">1,000,000원</span>
+                    </div>
+                </div>
+
+                <div class="tray">
+                    <div class="tit">
+                        <span>세금계산서 발행 메일</span>
+                        <span class="orange">abc123@gmail.com</span>
+                        <a href="#" class="modify">수정하기</a>
+                    </div>
+                </div>
+
+                <div class="tray">
+                    <span>세금계산서 발행 메일</span>
+                    <div class="rowFlex" style="gap: 20px;">
+                        <input type="text" placeholder="입력해주세요" style="height:48px">
+                        <div class="btn-fill fontSlim" style="height:48px">인증하기</div>
+                    </div>
+                </div>
+
+                <div class="tray">
+                    <span>결제 내역</span>
+                    <div class="rightBtnWrap">
+                        <select name="" id="" class="filter" style="height: 36px; font-size: 14px; font-weight: 500; padding: 0; padding-left: 8px;">
+                            <option value="최근 3개월">최근 3개월</option>
+                            <option value="최근 3개월">최근 3개월</option>
+                            <option value="최근 3개월">최근 3개월</option>
+                        </select>
+                        <button class="btn-line grey" style="height: 36px;">
+                            <img src="./img/ic_downBtn.svg" alt="">
+                            내보내기
+                        </button>
+                    </div>
+
+                    <div class="list listMulty">
+                        <div class="list-name">
+                            <span style="max-width: 142px;">항목</span>
+                            <span style="max-width: 450px;">사용기간</span>
+                            <span style="max-width: 292px;">결제금액</span>
+                            <span style="max-width: 292px;">세금계산서 발행</span>
+                            <span style="max-width: 269px;">결제확인</span>
+                        </div>
+                        <div class="listWrap">
+                            <div class="list-item">
+                                <span style="max-width: 142px;">Pro</span>
+                                <span style="max-width: 450px;">2023.09.01 ~ 2023.09.30</span>
+                                <span style="max-width: 292px;">1,000,000원</span>
+                                <span style="max-width: 292px;">발행 완료</span>
+                                <span style="max-width: 269px;">결제완료</span>
+                            </div>
+                            <div class="list-item">
+                                <span style="max-width: 142px;">Pro</span>
+                                <span style="max-width: 450px;">2023.09.01 ~ 2023.09.30</span>
+                                <span style="max-width: 292px;">1,000,000원</span>
+                                <span style="max-width: 292px;">발행 완료</span>
+                                <span style="max-width: 269px;">결제완료</span>
+                            </div>
+                            <div class="list-item">
+                                <span style="max-width: 142px;">Pro</span>
+                                <span style="max-width: 450px;">2023.09.01 ~ 2023.09.30</span>
+                                <span style="max-width: 292px;">1,000,000원</span>
+                                <span style="max-width: 292px;">발행 완료</span>
+                                <span style="max-width: 269px;">결제완료</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tray">
+                    <span>관리자</span>
+                    <div class="rightBtnWrap">
+                        <select name="" id="" class="filter" style="height: 36px; font-size: 14px; font-weight: 500; padding: 0; padding-left: 8px;">
+                            <option value="최근 3개월">최근 3개월</option>
+                            <option value="최근 3개월">최근 3개월</option>
+                            <option value="최근 3개월">최근 3개월</option>
+                        </select>
+                        <button class="btn-line grey" style="height: 36px;">
+                            <img src="./img/ic_downBtn.svg" alt="">
+                            내보내기
+                        </button>
+                        <button class="btn-fill" style="height: 36px;">추가하기</button>
+                    </div>
+
+                    <div class="list listMulty">
+                        <div class="list-name">
+                            <span style="max-width: 142px;">이름</span>
+                            <span style="max-width: 175px;">직급</span>
+                            <span style="max-width: 316px;">이메일</span>
+                            <span style="max-width: 292px;">연락처</span>
+                            <span style="max-width: 292px;">마지막 로그인</span>
+                            <span style="max-width: 292px;">계정상태</span>
+                        </div>
+                        <div class="listWrap">
+                            <div class="list-item">
+                                <span style="max-width: 142px;">홍길동</span>
+                                <span style="max-width: 175px;">마스터</span>
+                                <span style="max-width: 316px;">abd123@longlabel.com</span>
+                                <span style="max-width: 292px;">010-1234-1234</span>
+                                <span style="max-width: 292px;">2023.10.01 07:00</span>
+                                <span style="max-width: 269px;">사용승인</span>
+                            </div>
+                            <div class="list-item">
+                                <span style="max-width: 142px;">홍길동</span>
+                                <span style="max-width: 175px;">운영진</span>
+                                <span style="max-width: 316px;">abd123@longlabel.com</span>
+                                <span style="max-width: 292px;">010-1234-1234</span>
+                                <span style="max-width: 292px;">2023.10.01 07:00</span>
+                                <span style="max-width: 269px;">
+                                    <select>
+                                        <option value="계정잠금">계정잠금</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>
