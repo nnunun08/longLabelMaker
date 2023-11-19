@@ -8,6 +8,8 @@
 
     <!-- 퍼블리싱을 위한 include js -->
     <script src="./js/include.js"></script>
+    <script src="./js/lnb.js"></script>
+    <script src="./js/stepPage.js" defer></script>
 
 </head>
 <body>
@@ -19,9 +21,7 @@
             <div class="pageTit" style="margin-bottom: 40px;">
                 <h1>Long Label 추가</h1>
                 <div class="btnWrap">
-                    <button class="preview">
-                        미리보기
-                    </button>
+                    <button class="preview" onclick="previewOpen()">미리보기</button>
                     <button class="btn-fill" onclick="confirm()">저장하기</button>
                 </div>
             </div>
@@ -88,6 +88,12 @@
                     <div class="name">케어가이드</div>
                     <div class="state">작성전</div>
                 </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <div class="step">STEP 11</div>
+                    <div class="name">공개 설정</div>
+                    <div class="state">작성전</div>
+                </div>
             </div>
 
             <div class="dualSection">
@@ -106,6 +112,13 @@
                             <textarea placeholder="입력해주세요" style="margin-top:0;"></textarea>
                             <span class="limit">0/1000</span>
                         </div>
+
+                        <div class="rowFlex urlRow" style="margin-bottom: 8px;">
+                            <p>URL</p>
+                            <input type="text" placeholder="입력해주세요" style="height:48px">
+                            <div class="btn-line fontSlim" style="height:48px">저장</div>
+                        </div>
+
                         <div class="rowFlex" style="gap: 20px;">
                             <label class="checkbox">
                                 <input type="radio" name="radio"  checked="">
@@ -179,8 +192,9 @@
                     <div class="tray">
                         <span>브랜드에서 고객들 대상 알리고 싶은 것들을 입력해 주세요</span>
                         <p>ex)프로모션, 캠페인 등</p>
+                        <input type="text" placeholder="제목을 입력해주세요" style="height:48px">
                         <div class="textArea">
-                            <textarea placeholder="입력해주세요"></textarea>
+                            <textarea placeholder="입력해주세요" style="margin-top: 0;"></textarea>
                             <span class="limit">0/1000</span>
                         </div>
                         <div class="rowFlex" style="gap: 20px; margin-top: 8px;">
@@ -202,6 +216,35 @@
 
         </div>
 
+        <!-- display none / block 으로 컨트롤 -->
+        <div id="modal" class="dim" style="display: none;">
+            <div class="modal">
+                <button class="modalClose" onclick="modalClose()"></button>
+                <p class="tit">작성중인 내용을 저장할까요?</p>
+                <p>
+                    제품의 정보를 작성중이에요. 저장하지 않고 이동할 경우 작성 중인 내용이 삭제됩니다.
+                </p>
+                <div class="btnWrap">
+                    <button class="btn-line grey">이동하기</button>
+                    <button class="btn-fill">저장하기</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 미리보기 -->
+        <div id="preview" class="dim transitionDim" style="display: none;">
+            <div class="modal offcanvas-right">
+                <div class="h3">
+                    미리보기
+                    <button class="refresh"></button>
+                    <button class="previewClose" onclick="previewClose()"></button>
+                </div>
+                <div class="view">
+
+                </div>
+            </div>
+        </div>
+        
     </div>
 
     

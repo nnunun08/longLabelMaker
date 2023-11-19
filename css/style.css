@@ -80,6 +80,11 @@ h2 {
   height: 100%;
   overflow: auto;
   padding: 73px 24px 46px;
+  transition: 0.2s;
+}
+.section-contents.minify {
+  left: 86px;
+  width: calc(100% - 86px);
 }
 
 .btn-fill-second {
@@ -671,9 +676,20 @@ h2 {
   align-items: center;
   border: solid 1px #707070;
   box-sizing: border-box;
+  position: relative;
 }
 .itemThumbList .qr img {
   max-width: 63%;
+}
+.itemThumbList .qr .btn-download {
+  cursor: pointer;
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff url(../img/ic_download.svg) center no-repeat;
 }
 .itemThumbList .name {
   overflow: hidden;
@@ -880,6 +896,14 @@ h2 {
   letter-spacing: normal;
   text-align: left;
   color: var(--151515);
+}
+.tray .urlRow p {
+  font-family: Pretendard;
+  font-size: 16px;
+  font-weight: 500;
+}
+.tray .urlRow input {
+  max-width: 874px;
 }
 .tray .imgList {
   display: flex;
@@ -1124,7 +1148,6 @@ h2 {
 .tray .certi .thumb {
   width: 130px;
   height: 130px;
-  border-radius: 50%;
   overflow: hidden;
   margin-left: 20px;
   margin-right: 35px;
@@ -1985,6 +2008,13 @@ textarea::placeholder {
   height: 100%;
   background-color: rgba(21, 21, 21, 0.2);
 }
+.dim.transitionDim {
+  opacity: 0;
+  transition: 0.2s;
+}
+.dim.transitionDim.on {
+  opacity: 1;
+}
 .dim .modal {
   position: absolute;
   top: 50%;
@@ -1997,6 +2027,42 @@ textarea::placeholder {
   border: solid 1px #707070;
   background-color: #f4f4f4;
 }
+.dim .modal.offcanvas-right {
+  top: 0;
+  left: unset;
+  right: -450px;
+  bottom: 0;
+  transform: none;
+  width: 450px;
+  height: 100vh;
+  padding: 20px;
+  border: 0;
+  background-color: #fff;
+  transition: 0.2s;
+}
+.dim .modal.offcanvas-right .h3 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+.dim .modal.offcanvas-right .h3 .refresh {
+  width: 20px;
+  height: 20px;
+  background: url(../img/ic_refresh.svg) center no-repeat;
+}
+.dim .modal.offcanvas-right .h3 .previewClose {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+}
+.dim .modal.offcanvas-right .view {
+  overflow-y: auto;
+  background: #F4F4F4;
+}
+.dim .modal .previewClose,
 .dim .modal .modalClose {
   position: absolute;
   right: 24px;
@@ -2091,4 +2157,76 @@ textarea::placeholder {
 }
 .dim .modal .btnWrap .btn-fill.fontSlim {
   font-weight: 500;
+}
+.dim.on .modal.offcanvas-right {
+  right: 0;
+}
+
+.adminLogin header {
+  height: 76px;
+  background: var(--151515);
+  padding-top: 26px;
+  box-sizing: border-box;
+}
+.adminLogin .inner {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.adminLogin .loginWrap {
+  text-align: center;
+}
+.adminLogin .loginWrap .subLogo {
+  margin-top: 17px;
+  margin-bottom: 60px;
+  color: #ff6633;
+  font-size: 24px;
+  font-weight: 300;
+}
+.adminLogin .loginWrap svg {
+  margin-top: 140px;
+  height: 34px;
+}
+.adminLogin .loginWrap .tray {
+  padding: 32px 48px 60px;
+  max-width: 496px;
+  margin: 0 auto;
+}
+.adminLogin .loginWrap .tray h3 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.adminLogin .loginWrap .tray input {
+  height: 56px;
+  border: 0;
+  border-bottom: 1px solid #707070;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.adminLogin .loginWrap .tray input::-moz-placeholder {
+  color: #707070;
+}
+.adminLogin .loginWrap .tray input::placeholder {
+  color: #707070;
+}
+.adminLogin .loginWrap .tray input:focus {
+  outline: 0;
+  border-bottom: 1px solid var(--151515);
+}
+.adminLogin .loginWrap .tray .find {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  color: #707070;
+  text-decoration: none;
+}
+.adminLogin .loginWrap .tray .btn-login {
+  margin-top: 8px;
+  background-color: #ff6633;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  height: 48px;
 }/*# sourceMappingURL=style.css.map */
