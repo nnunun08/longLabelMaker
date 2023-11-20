@@ -24,6 +24,7 @@ body {
 }
 
 button {
+  font-family: Pretendard;
   cursor: pointer;
   border: 0;
 }
@@ -88,6 +89,7 @@ h2 {
 }
 
 .btn-fill-second {
+  font-family: Pretendard;
   border: 0;
   height: 48px;
   min-width: 134px;
@@ -103,6 +105,7 @@ h2 {
 }
 
 .btn-fill {
+  font-family: Pretendard;
   border: 0;
   height: 36px;
   min-width: 134px;
@@ -126,6 +129,7 @@ h2 {
   position: relative;
 }
 .pageTit .download {
+  font-family: Pretendard;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,6 +170,7 @@ h2 {
   font-weight: 500;
 }
 .pageTit .btn-fill {
+  font-family: Pretendard;
   border: 0;
   height: 36px;
   min-width: 134px;
@@ -322,6 +327,7 @@ h2 {
   box-sizing: border-box;
 }
 .sectionTit .btn-fill {
+  font-family: Pretendard;
   border: 0;
   height: 36px;
   min-width: 134px;
@@ -339,6 +345,7 @@ h2 {
   font-weight: 500;
 }
 .sectionTit .download {
+  font-family: Pretendard;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -800,6 +807,7 @@ h2 {
 }
 
 .guideWord {
+  font-family: Pretendard;
   font-size: 32px;
   font-weight: 100;
   font-stretch: normal;
@@ -825,6 +833,7 @@ h2 {
   padding-bottom: 62px;
 }
 .rightSection .btn-line {
+  font-family: Pretendard;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1335,6 +1344,7 @@ h2 {
   margin-top: 18px;
 }
 .tray .btn-fill {
+  font-family: Pretendard;
   border: 0;
   height: 36px;
   min-width: 134px;
@@ -1395,6 +1405,7 @@ h2 {
   gap: 24px;
 }
 .tray .btnWrap .btn-fill {
+  font-family: Pretendard;
   border: 0;
   height: 36px;
   min-width: 134px;
@@ -1415,6 +1426,7 @@ h2 {
   font-weight: 500;
 }
 .tray .btnWrap .btn-line {
+  font-family: Pretendard;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1443,6 +1455,7 @@ h2 {
 }
 .tray select,
 .tray input[type=text] {
+  font-family: Pretendard;
   box-sizing: border-box;
   padding: 15px 14px 14px;
   border: solid 1px #afafaf;
@@ -1478,7 +1491,7 @@ h2 {
 }
 .tray .subTit {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.6;
@@ -1632,6 +1645,7 @@ h2 {
   gap: 24px;
 }
 .billing .btn-line {
+  font-family: Pretendard;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1661,6 +1675,7 @@ h2 {
   width: 109px;
 }
 .billing .btn-fill {
+  font-family: Pretendard;
   border: 0;
   height: 36px;
   min-width: 134px;
@@ -1880,6 +1895,7 @@ textarea::placeholder {
   box-sizing: border-box;
 }
 .labelItem .btn-line {
+  font-family: Pretendard;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2106,6 +2122,7 @@ textarea::placeholder {
   flex: 1 0 0;
 }
 .dim .modal .btnWrap .btn-line {
+  font-family: Pretendard;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2138,6 +2155,7 @@ textarea::placeholder {
   background-color: #f4f4f4;
 }
 .dim .modal .btnWrap .btn-fill {
+  font-family: Pretendard;
   border: 0;
   height: 36px;
   min-width: 134px;

@@ -24,6 +24,7 @@ body {
     overflow: hidden;
 }
 button {
+    font-family: Pretendard;
     cursor: pointer;
     border: 0;
 }
@@ -100,6 +101,7 @@ h2 {
 @mixin btn-line() {
     .btn-line {
         // cursor: pointer;
+        font-family: Pretendard;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -123,6 +125,7 @@ h2 {
 }
 @mixin btn-fill-second() {
     .btn-fill-second {
+        font-family: Pretendard;
         border: 0;
         height: 48px;
         min-width: 134px;
@@ -143,6 +146,7 @@ h2 {
 @mixin btn-fill() {
     .btn-fill {
         // cursor: pointer;
+        font-family: Pretendard;
         border: 0;
         height: 36px;
         min-width: 134px;
@@ -164,6 +168,7 @@ h2 {
 @include btn-fill;
 @mixin downloadBtn() {
     .download {
+        font-family: Pretendard;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -800,6 +805,7 @@ h2 {
     position: relative;
 }
 .guideWord {
+    font-family: Pretendard;
     font-size: 32px;
     font-weight: 100;
     font-stretch: normal;
@@ -1281,6 +1287,7 @@ h2 {
     }
     select,
     input[type="text"] {
+        font-family: Pretendard;
         box-sizing: border-box;
         padding: 15px 14px 14px;
         border: solid 1px #afafaf;
@@ -1312,7 +1319,7 @@ h2 {
 
     .subTit {
         font-size: 20px;
-        font-weight: 500;
+        font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.6;
