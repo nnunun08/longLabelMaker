@@ -142,7 +142,7 @@ h2 {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url(../img/ic_download.svg) center no-repeat;
+  background: url(../img/ic_downloadList.svg) center no-repeat;
 }
 .pageTit .btnWrap {
   position: absolute;
@@ -355,7 +355,7 @@ h2 {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url(../img/ic_download.svg) center no-repeat;
+  background: url(../img/ic_downloadList.svg) center no-repeat;
 }
 
 .productThumb {
@@ -784,7 +784,7 @@ h2 {
   background-color: transparent;
   width: 134px;
   height: 32px;
-  border: solid 1px #afafaf;
+  border: solid 1px #707070;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -792,7 +792,7 @@ h2 {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #afafaf;
+  color: #707070;
 }
 
 .dualSection {
@@ -1818,6 +1818,9 @@ label.checkbox .fontLarge {
   text-align: left;
   color: var(--151515);
 }
+label.checkbox .fontLarge em {
+  font-size: 16px;
+}
 label.checkbox::before {
   content: "";
   display: block;
@@ -1900,6 +1903,7 @@ textarea::placeholder {
   color: #afafaf;
   border-color: #afafaf;
   min-width: 120px;
+  font-size: 18px;
 }
 .labelItem .name {
   font-size: 28px;
