@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+    <g data-name="그룹 4277">
+        <path data-name="사각형 979" style="fill:none" d="M0 0h52v52H0z"/>
+        <g data-name="그룹 4280">
+            <path data-name="패스 502" d="M137.762-413.95h18.7a2.093 2.093 0 0 1 2.042 1.774l4.4 26.163a2.121 2.121 0 0 1-2.042 2.507h-35.18a2.126 2.126 0 0 1-2.016-2.644c1.067-4.61 4.308-13.731 13.363-14.794l22.957-2.422" transform="translate(-117.272 421.996)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none"/>
+        </g>
+        <text data-name="80~120℃" transform="translate(26 34.371)" style="fill:#f63;font-size:5px;font-family:Montserrat;font-weight:600"><tspan x="-11.645" y="0">80~120</tspan><tspan y="0" style="font-family:Helvetica-Bold,Helvetica;font-weight:700">℃</tspan></text>
+    </g>
+</svg>

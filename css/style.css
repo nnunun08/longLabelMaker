@@ -2325,6 +2325,55 @@ textarea::placeholder {
   margin: 20px 0;
   box-sizing: border-box;
 }
+.qrMobile .card.careGuide .cardTit {
+  font-size: 19px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dusty-orange);
+  margin-bottom: 20px;
+}
+.qrMobile .card.careGuide .careImg {
+  display: flex;
+  justify-content: space-between;
+}
+.qrMobile .card.careGuide .careImg .item {
+  width: 52px;
+  height: 52px;
+}
+.qrMobile .card.careGuide .careImg .item:nth-child(1) {
+  background: url(../img/ic_careGuide_01.svg) center no-repeat;
+}
+.qrMobile .card.careGuide .careImg .item:nth-child(2) {
+  background: url(../img/ic_careGuide_02.svg) center no-repeat;
+}
+.qrMobile .card.careGuide .careImg .item:nth-child(3) {
+  background: url(../img/ic_careGuide_03.svg) center no-repeat;
+}
+.qrMobile .card.careGuide .careImg .item:nth-child(4) {
+  background: url(../img/ic_careGuide_04.svg) center no-repeat;
+}
+.qrMobile .card.careGuide .careImg .item:nth-child(5) {
+  background: url(../img/ic_careGuide_05.svg) center no-repeat;
+}
+.qrMobile .card .km {
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--151515);
+}
+.qrMobile .card .km b {
+  font-weight: bold;
+  color: var(--dusty-orange);
+}
 .qrMobile .card .cardTit {
   font-family: Pretendard;
   font-size: 23px;
@@ -2446,6 +2495,7 @@ textarea::placeholder {
   width: 1%;
   height: 100%;
   border-radius: 8px;
+  transition: 2s 0.8s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 .qrMobile .card .stick:nth-child(1) .stickBar {
   background-color: #ff6633;
@@ -2469,6 +2519,9 @@ textarea::placeholder {
   font-family: Pretendard;
   font-size: 13px;
   font-weight: 500;
+}
+.qrMobile .card:not(.aos-animate) .stick .stickBar {
+  width: 1% !important;
 }
 .qrMobile .card .halfDoughnutWrap {
   position: relative;
@@ -2631,4 +2684,147 @@ textarea::placeholder {
   color: var(--151515);
   margin-top: 36px;
   margin-bottom: 20px;
+}
+.qrMobile .brandInfo {
+  font-family: Pretendard;
+}
+.qrMobile .brandInfo .brandTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.qrMobile .brandInfo .brandLogo {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #707070;
+  border-radius: 50%;
+}
+.qrMobile .brandInfo h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+}
+.qrMobile .brandInfo h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+  margin-bottom: 19px;
+}
+.qrMobile .brandInfo .listWrap {
+  border: 2px solid var(--151515);
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 50px;
+}
+.qrMobile .brandInfo .listWrap .list {
+  padding-top: 15px;
+  padding-bottom: 12px;
+  border-top: 1px solid var(--151515);
+}
+.qrMobile .brandInfo .listWrap .list:first-child {
+  border-top: 0;
+}
+.qrMobile .brandInfo .listWrap .list .list-tit {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--151515);
+  margin-bottom: 12px;
+}
+.qrMobile .notice .noticeTit {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dusty-orange);
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--151515);
+}
+.qrMobile .feedBack {
+  margin-top: 52px;
+  word-break: keep-all;
+}
+.qrMobile .feedBack .tit {
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--dusty-orange);
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0 19%;
+}
+.qrMobile .feedBack p {
+  font-family: Pretendard;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--151515);
+  margin-bottom: 32px;
+}
+.qrMobile .feedBack .heartBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: var(--dusty-orange);
+}
+.qrMobile .feedBack .heartBtn .heartBx {
+  position: relative;
+}
+.qrMobile .feedBack .heartBtn .heartBx .effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes touchHeart {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(3);
+  }
 }/*# sourceMappingURL=style.css.map */

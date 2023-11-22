@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+    <g data-name="그룹 4175">
+        <g data-name="그룹 4173">
+            <text data-name="약 30℃ 중성" transform="translate(26 28.907)" style="fill:#f63;font-size:5px;font-family:Pretendard-SemiBold,Pretendard;font-weight:600"><tspan x="-8.821" y="0">약 3</tspan><tspan y="0" style="font-family:Montserrat">0</tspan><tspan y="0" style="font-family:Helvetica-Bold,Helvetica;font-weight:700">℃</tspan><tspan style="font-family:AppleSDGothicNeo-SemiBold,Apple SD Gothic Neo"><tspan x="-4.325" y="7">중성</tspan></tspan></text>
+            <text transform="translate(26 12.874)" style="fill:#f63;font-size:5px;font-family:Pretendard-SemiBold,Pretendard;font-weight:600"><tspan x="-6.482" y="0">손세탁</tspan></text>
+            <g data-name="그룹 3563">
+                <path data-name="패스 505" d="m-193.03-418.511-4.662 34.731a1.708 1.708 0 0 1-1.708 1.707h-17.67a1.707 1.707 0 0 1-1.707-1.707l-4.662-34.731" transform="translate(234.235 426.292)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none"/>
+                <g data-name="그룹 3562">
+                    <path data-name="패스 506" d="M-219.785-394.279c2.311 0 2.311 2.186 4.622 2.186s2.312-2.186 4.623-2.186 2.312 2.186 4.625 2.186 2.311-2.186 4.623-2.186 2.313 2.186 4.626 2.186 2.313-2.186 4.627-2.186" transform="translate(231.912 412.438)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none"/>
+                </g>
+            </g>
+        </g>
+        <path data-name="사각형 979" style="fill:none" d="M0 0h52v52H0z"/>
+    </g>
+</svg>

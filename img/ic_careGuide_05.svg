@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+    <g data-name="그룹 4279">
+        <path data-name="사각형 979" style="fill:none" d="M0 0h52v52H0z"/>
+        <g data-name="그룹 4282" transform="translate(7.068 7.068)">
+            <circle data-name="타원 72" cx="13.787" cy="13.787" r="13.787" transform="translate(5.145 5.145)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none"/>
+            <g data-name="그룹 3565">
+                <path data-name="선 499" transform="translate(18.932 32.719)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none" d="M0 0v5.145"/>
+                <path data-name="선 500" transform="translate(18.932)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none" d="M0 0v5.145"/>
+                <path data-name="선 501" transform="translate(0 18.932)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none" d="M5.145 0H0"/>
+                <path data-name="선 502" transform="translate(32.719 18.932)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none" d="M5.145 0H0"/>
+                <path data-name="선 503" transform="translate(5.545 5.545)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none" d="M3.638 3.638 0 0"/>
+                <path data-name="선 504" transform="translate(28.681 28.681)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none" d="M3.638 3.638 0 0"/>
+                <path data-name="선 505" transform="translate(5.545 28.681)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none" d="M3.638 0 0 3.638"/>
+                <path data-name="선 506" transform="translate(28.681 5.545)" style="stroke:#f63;stroke-miterlimit:10;stroke-width:2px;fill:none" d="M3.638 0 0 3.638"/>
+            </g>
+        </g>
+    </g>
+</svg>
