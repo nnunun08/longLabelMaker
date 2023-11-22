@@ -33,6 +33,10 @@ button {
   border: 0;
 }
 
+input, select {
+  font-family: Pretendard;
+}
+
 .root {
   position: relative;
   width: 100vw;
@@ -199,6 +203,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 40px;
+  position: relative;
 }
 .tab li {
   padding-bottom: 2px;
@@ -224,6 +229,14 @@ h2 {
 }
 .tab li a:hover {
   color: var(--ff-6633);
+}
+.tab .public {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .summary {
@@ -2206,6 +2219,13 @@ textarea::placeholder {
 .adminLogin .loginWrap {
   text-align: center;
 }
+.adminLogin .loginWrap .logoBlack {
+  margin: 0 auto;
+  margin-top: 140px;
+  width: 360px;
+  height: 35px;
+  background: url(../img/logoBlack.svg) center/contain no-repeat;
+}
 .adminLogin .loginWrap .subLogo {
   margin-top: 17px;
   margin-bottom: 60px;
@@ -2225,6 +2245,14 @@ textarea::placeholder {
 .adminLogin .loginWrap .tray h3 {
   text-align: center;
   margin-bottom: 48px;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--151515);
 }
 .adminLogin .loginWrap .tray input {
   height: 56px;

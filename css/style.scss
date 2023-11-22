@@ -32,6 +32,9 @@ button {
     cursor: pointer;
     border: 0;
 }
+input, select {
+    font-family: Pretendard;
+}
 
 .root {
     position: relative;
@@ -236,6 +239,7 @@ h2 {
         display: flex;
         align-items: center;
         gap: 40px;
+        position: relative;
         li {
             padding-bottom: 2px;
             border-bottom: 2px solid transparent;
@@ -260,6 +264,14 @@ h2 {
                     color: var(--ff-6633);
                 }
             }
+        }
+        .public {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
         @content;
     }
@@ -1961,6 +1973,13 @@ textarea {
     }
     .loginWrap {
         text-align: center;
+        .logoBlack {
+            margin: 0 auto;
+            margin-top: 140px;
+            width: 360px;
+            height: 35px;
+            background: url(../img/logoBlack.svg) center/contain no-repeat;
+        }
         .subLogo {
             margin-top: 17px;
             margin-bottom: 60px;
@@ -1979,6 +1998,14 @@ textarea {
             h3 {
                 text-align: center;
                 margin-bottom: 48px;
+                font-size: 28px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: center;
+                color: var(--151515);
             }
             input {
                 height: 56px;
