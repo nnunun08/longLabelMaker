@@ -209,4 +209,7 @@
 }
 .compo_paging ul li a:hover {
   color: #ff7a34;
+}
+.compo_paging ul li.ac a {
+  color: #ff7a34;
 }/*# sourceMappingURL=compo.css.map */
