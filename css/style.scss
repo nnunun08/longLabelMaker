@@ -2366,7 +2366,8 @@ textarea {
 
         .flow {
             background-image: url(../img/bg_flow_dash.png);
-            background-repeat-x: no-repeat;
+            // background-repeat-x: no-repeat;
+            background-repeat: repeat-y;
             .item {
                 padding-left: 40px;
                 position: relative;
@@ -2377,13 +2378,19 @@ textarea {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    animation: flowIconMove 5s infinite linear;
+                    &.flowIconAc {
+                        animation: flowIconMove 3s linear;
+                        opacity: 0;
+                    }
+                    // &.flowIcon2 {animation: flowIconMove 3s 3s linear;}
+                    // &.flowIcon3 {animation: flowIconMove 3s 6s linear;}
+                    // &.flowIcon4 {animation: flowIconMove 3s 9s linear;}
                     @keyframes flowIconMove {
                         from {
                             top: 0;
                             opacity: 1;
                         }
-                        50% {
+                        90% {
                             opacity: 1;
                         }
                         to {

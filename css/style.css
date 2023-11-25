@@ -2606,7 +2606,7 @@ textarea::placeholder {
 }
 .qrMobile .card .flow {
   background-image: url(../img/bg_flow_dash.png);
-  background-repeat-x: no-repeat;
+  background-repeat: repeat-y;
 }
 .qrMobile .card .flow .item {
   padding-left: 40px;
@@ -2619,14 +2619,17 @@ textarea::placeholder {
   position: absolute;
   top: 0;
   left: 0;
-  animation: flowIconMove 5s infinite linear;
+}
+.qrMobile .card .flow .item .flowIcon.flowIconAc {
+  animation: flowIconMove 3s linear;
+  opacity: 0;
 }
 @keyframes flowIconMove {
   from {
     top: 0;
     opacity: 1;
   }
-  50% {
+  90% {
     opacity: 1;
   }
   to {

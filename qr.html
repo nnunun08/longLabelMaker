@@ -293,7 +293,7 @@
                     <div class="flow">
                         <div class="item">
                             <div class="hiddenBg"></div>
-                            <img class="flowIcon" src="./img/ic_flow_car.svg" alt="">
+                            <img class="flowIcon flowIcon1" src="./img/ic_flow_car.svg" alt="">
                             <div class="itemTit">기획/디자인</div>
                             <div class="flex">
                                 <div class="locationImg">
@@ -310,7 +310,7 @@
                         </div>
 
                         <div class="item">
-                            <img class="flowIcon" src="./img/ic_flow_airplane.svg" alt="">
+                            <img class="flowIcon flowIcon2" src="./img/ic_flow_airplane.svg" alt="">
                             <div class="itemTit">원자재</div>
                             <div class="flex">
                                 <div class="locationImg">
@@ -327,7 +327,7 @@
                         </div>
 
                         <div class="item">
-                            <img class="flowIcon" src="./img/ic_flow_airplane.svg" alt="">
+                            <img class="flowIcon flowIcon3" src="./img/ic_flow_airplane.svg" alt="">
                             <div class="itemTit">제작</div>
                             <div class="flex">
                                 <div class="locationImg">
@@ -344,7 +344,7 @@
                         </div>
 
                         <div class="item">
-                            <img class="flowIcon" src="./img/ic_flow_airplane.svg" alt="">
+                            <img class="flowIcon flowIcon4" src="./img/ic_flow_airplane.svg" alt="">
                             <div class="itemTit">포장</div>
                             <div class="flex">
                                 <div class="locationImg">
@@ -359,6 +359,20 @@
                                 </div>
                             </div>
                         </div>
+
+                        <script>
+                            const item = document.querySelectorAll('.qrMobile .card .flow .item .flowIcon');
+                            
+                            setInterval(() => {
+                                item.forEach((e, i)=>{
+                                    setTimeout(() => {
+                                        e.classList.add('flowIconAc');
+                                        setInterval({}, 3000);
+                                    }, i * 3000);
+                                });
+                            }, 0)
+                            
+                        </script>
                     </div>
                 </div>
 
