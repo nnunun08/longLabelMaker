@@ -2326,7 +2326,7 @@ textarea::placeholder {
   box-sizing: border-box;
 }
 .qrMobile .card.careGuide .cardTit {
-  font-size: 19px;
+  font-size: 23px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -2721,7 +2721,7 @@ textarea::placeholder {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: var(--151515);
+  color: var(--dusty-orange);
   margin-bottom: 19px;
 }
 .qrMobile .brandInfo .listWrap {
